@@ -72,7 +72,7 @@ const NavBar: React.FC = () => {
       className={`${
         isOpen
           ? "inset-0 bg-transparent"
-          : `lg:max-w-7xl max-w-[90vw] left-1/2 top-4 -translate-x-1/2 ${
+          : `left-1/2 top-4 max-w-[90vw] -translate-x-1/2 lg:max-w-7xl ${
               isHomeActive ? "bg-primaryBG" : "bg-white"
             }`
       } fixed z-50 w-full rounded-full py-4`}
@@ -81,7 +81,12 @@ const NavBar: React.FC = () => {
       <div className="mx-auto flex items-center justify-between px-4">
         {/* Left: Logo */}
         <div className="flex items-center">
-          <Image src="/images/test.webp" alt="Logo" width={50} height={50} />
+          <Image
+            src="/images/logo.svg"
+            alt="Logo"
+            width={50}
+            height={50}
+          />
         </div>
 
         {/* Center: Menu */}
