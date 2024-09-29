@@ -72,7 +72,7 @@ const NavBar: React.FC = () => {
       className={`${
         isOpen
           ? "inset-0 bg-transparent"
-          : `sec left-1/2 top-4 -translate-x-1/2 ${
+          : `lg:max-w-7xl max-w-[90vw] left-1/2 top-4 -translate-x-1/2 ${
               isHomeActive ? "bg-primaryBG" : "bg-white"
             }`
       } fixed z-50 w-full rounded-full py-4`}

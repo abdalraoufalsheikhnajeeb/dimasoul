@@ -21,8 +21,8 @@ export const menuItems = [
     title: "Resources",
     submenu: [
       {
-        title: "Resource 1",
-        href: "/resource1",
+        title: "Blog",
+        href: "/blog",
       },
       {
         title: "Resource 2",
@@ -38,8 +38,8 @@ export const menuItems = [
         href: "/team",
       },
       {
-        title: "Other 2",
-        href: "/other2",
+        title: "Contact Us",
+        href: "/contact-us",
       },
     ],
   },
@@ -136,72 +136,72 @@ export const featuresData = [
 ];
 export const galleryImages = [
   {
-    src: "/images/test.webp", 
+    src: "/images/test.webp",
     alt: "Relaxation",
     caption: "Relaxation",
   },
   {
-    src: "/images/test.webp ", 
+    src: "/images/test.webp ",
     alt: "Mindfulness",
     caption: "Mindfulness",
   },
   {
-    src: "/images/test.webp ", 
+    src: "/images/test.webp ",
     alt: "Creativity",
     caption: "Creativity",
   },
   {
-    src: "/images/test.webp ", 
+    src: "/images/test.webp ",
     alt: "Freedom",
     caption: "Freedom",
   },
   {
-    src: "/images/test.webp ", 
+    src: "/images/test.webp ",
     alt: "Meditation",
     caption: "Meditation",
   },
   {
-    src: "/images/test.webp ", 
+    src: "/images/test.webp ",
     alt: "Balance",
     caption: "Balance",
   },
   {
-    src: "/images/test.webp ", 
+    src: "/images/test.webp ",
     alt: "Harmony",
     caption: "Harmony",
   },
   {
-    src: "/images/test.webp ", 
+    src: "/images/test.webp ",
     alt: "Joy",
     caption: "Joy",
   },
   {
-    src: "/images/test.webp ", 
+    src: "/images/test.webp ",
     alt: "Balance",
     caption: "Balance",
   },
   {
-    src: "/images/test.webp ", 
+    src: "/images/test.webp ",
     alt: "Harmony",
     caption: "Harmony",
   },
   {
-    src: "/images/test.webp ", 
+    src: "/images/test.webp ",
     alt: "Joy",
     caption: "Joy",
   },
   {
-    src: "/images/test.webp ", 
+    src: "/images/test.webp ",
     alt: "Balance",
     caption: "Balance",
   },
   {
-    src: "/images/test.webp ", 
+    src: "/images/test.webp ",
     alt: "Harmony",
     caption: "Harmony",
   },
   {
-    src: "/images/test.webp ", 
+    src: "/images/test.webp ",
     alt: "Joy",
     caption: "Joy",
   },
@@ -210,19 +210,19 @@ export const galleryImages = [
 // team.js
 export const teamImages = [
   {
-    src: "/images/test.webp", 
+    src: "/images/test.webp",
     alt: "Team Working Together",
     width: 600,
     height: 400,
   },
   {
-    src: "/images/test.webp", 
+    src: "/images/test.webp",
     alt: "Counseling Session",
     width: 300,
     height: 200,
   },
   {
-    src: "/images/test.webp", 
+    src: "/images/test.webp",
     alt: "Consultant Working",
     width: 300,
     height: 200,
@@ -273,52 +273,99 @@ export const blogPosts = [
   {
     id: 1,
     title: "How Mental Health Consultants Can Help...",
+    fullTitle:
+      "How Mental Health Consultants Can Help Individuals and Organizations Thrive",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla...",
-    image: "/images/test.webp", 
-    link: "#",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis. Placerat donec risus diam sed et. A in ullamcorper ipsum justo vestibulum sit cursus...",
+    image: "/images/test.webp",
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. 
+      In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam 
+      porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum.
+      `,
+    link: "/blog/1",
   },
   {
     id: 2,
     title: "How Mental Health Consultants Can Help...",
+    fullTitle: "The Importance of Mental Health Consultants in the Workplace",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla...",
-    image: "/images/test.webp", 
-    link: "#",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis...",
+    image: "/images/test.webp",
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. 
+      Nunc ut sem vitae risus tristique posuere.
+      `,
+    link: "/blog/2",
   },
   {
-    id: 3,
+    id: 2,
     title: "How Mental Health Consultants Can Help...",
+    fullTitle: "The Importance of Mental Health Consultants in the Workplace",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla...",
-    image: "/images/test.webp", 
-    link: "#",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis...",
+    image: "/images/test.webp",
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. 
+      Nunc ut sem vitae risus tristique posuere.
+      `,
+    link: "/blog/2",
   },
   {
-    id: 4,
+    id: 2,
     title: "How Mental Health Consultants Can Help...",
+    fullTitle: "The Importance of Mental Health Consultants in the Workplace",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla...",
-    image: "/images/test.webp", 
-    link: "#",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis...",
+    image: "/images/test.webp",
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. 
+      Nunc ut sem vitae risus tristique posuere.
+      `,
+    link: "/blog/2",
   },
   {
-    id: 5,
+    id: 2,
     title: "How Mental Health Consultants Can Help...",
+    fullTitle: "The Importance of Mental Health Consultants in the Workplace",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla...",
-    image: "/images/test.webp", 
-    link: "#",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis...",
+    image: "/images/test.webp",
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. 
+      Nunc ut sem vitae risus tristique posuere.
+      `,
+    link: "/blog/2",
   },
   {
-    id: 6,
+    id: 2,
     title: "How Mental Health Consultants Can Help...",
+    fullTitle: "The Importance of Mental Health Consultants in the Workplace",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla...",
-    image: "/images/test.webp", 
-    link: "#",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis...",
+    image: "/images/test.webp",
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. 
+      Nunc ut sem vitae risus tristique posuere.
+      `,
+    link: "/blog/2",
   },
+  {
+    id: 2,
+    title: "How Mental Health Consultants Can Help...",
+    fullTitle: "The Importance of Mental Health Consultants in the Workplace",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis...",
+    image: "/images/test.webp",
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. 
+      Nunc ut sem vitae risus tristique posuere.
+      `,
+    link: "/blog/2",
+  },
+  // Add more blog posts as needed
 ];
+
 // pricingPlans.js
 export const pricingPlans = [
   {
@@ -428,11 +475,6 @@ export const footerData = {
   },
 };
 
-
-
-
-
-
 export const AboutUSsectionDetails = [
   {
     id: 1,
@@ -488,7 +530,6 @@ export const teamContent = {
   buttonText: "See Details",
 };
 
-
 export const successStoryContent = {
   title: "Success Story",
   headline:
@@ -518,9 +559,6 @@ export const successStoryContent = {
   imageSrc: "/images/test.webp", // Placeholder image, replace with your image path
   imageAlt: "Mental Health Consultant",
 };
-
-
-
 
 export const servicesContent = {
   title: "Services",
@@ -654,3 +692,43 @@ export const teamMembers = [
     caption: "Harry J - Psychologist",
   },
 ];
+
+export const contactInfo = {
+  title: "We'd Love to Hear From You",
+  subtitle: "Get in Touch",
+  description:
+    "Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis. Placerat donec risus diam sed et. A in ullamcorper ipsum.",
+  contactDetails: [
+    {
+      id: 1,
+      icon: "/icons/phone.svg", // Replace with your actual icon path
+      label: "Phone Number",
+      info: "+987 654 3210",
+    },
+    {
+      id: 2,
+      icon: "/icons/clock.svg", // Replace with your actual icon path
+      label: "Business Hours",
+      info: "Mon-Fri, 07:00-16:00",
+    },
+    {
+      id: 3,
+      icon: "/icons/location.svg", // Replace with your actual icon path
+      label: "Address",
+      info: "7676 Arden Avenue, Ginashire",
+    },
+  ],
+  form: {
+    namePlaceholder: "Enter your name",
+    emailPlaceholder: "Enter your email",
+    messagePlaceholder: "Enter your message",
+    buttonText: "Send Message",
+  },
+};
+
+export const mapInfo = {
+  title: "Mapping Out Mental Health Consulting Strategies",
+  subtitle: "Maps",
+  mapEmbedUrl:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.484578982694!2d-79.38949648426744!3d43.6454646791219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d54d241bb7%3A0x7b82c13158c40f21!2sRogers%20Centre!5e0!3m2!1sen!2sca!4v1614108256400!5m2!1sen!2sca", // Embed URL from Google Maps
+};

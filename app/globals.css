@@ -24,3 +24,7 @@ body {
     max-width: 80rem;
   }
 }
+.sec.m-0 {
+  max-width: 90vw;
+  margin-inline: auto;
+}

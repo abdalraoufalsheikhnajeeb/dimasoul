@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { blogPosts } from "../data";
+import Link from "next/link";
 
 const BlogSection = async () => {
   return (
@@ -30,8 +31,8 @@ const BlogSection = async () => {
       </div>
 
       {/* Blog Grid for Desktop */}
-      <div className="hidden gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
-        {blogPosts.slice(0,6).map((post) => (
+      <div className="hidden gap-6 md:grid md:grid-cols-2 lg:grid-cols-3 sec">
+        {blogPosts.slice(0, 6).map((post) => (
           <div
             key={post.id}
             className="overflow-hidden rounded-lg bg-white shadow-md transition-shadow hover:shadow-xl"
@@ -48,10 +49,11 @@ const BlogSection = async () => {
                 {post.title}
               </h3>
               <p className="mt-2 text-sm text-gray-600">
-                {post.description}{" "}
-                <a href={post.link} className="text-primary">
+                {post.description.split(" ").slice(0, 50).join(" ")}...
+                <Link href={post.link} className="text-primary">
+                  {" "}
                   See more
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -76,9 +78,10 @@ const BlogSection = async () => {
               <h3 className="text-lg font-semibold">{post.title}</h3>
               <p className="mt-2 text-sm text-gray-600">
                 {post.description}{" "}
-                <a href={post.link} className="text-primary">
+                <Link href={post.link} className="text-primary">
+                  {" "}
                   See more
-                </a>
+                </Link>
               </p>
             </div>
           </div>
