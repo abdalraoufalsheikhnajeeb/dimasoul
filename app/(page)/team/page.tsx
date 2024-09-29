@@ -29,7 +29,7 @@ const page = () => {
           Caring for Your Mental Health Get to Know Our Team of Experts
         </p>
         <p className="mx-auto w-1/2 max-w-2xl text-lg text-gray-700">
-          Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing
+          Lorem ipsum dolor sit am  et consectetur. Convallis est urna adipiscing
           fringilla nulla diam lorem non mauris. Ultrices aliquet at quam
           adipiscing.
         </p>
