@@ -41,6 +41,10 @@ export const menuItems = [
         title: "Contact Us",
         href: "/contact-us",
       },
+      {
+        title: "Calendar",
+        href: "/calendar",
+      },
     ],
   },
 ];
@@ -732,3 +736,31 @@ export const mapInfo = {
   mapEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.484578982694!2d-79.38949648426744!3d43.6454646791219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d54d241bb7%3A0x7b82c13158c40f21!2sRogers%20Centre!5e0!3m2!1sen!2sca!4v1614108256400!5m2!1sen!2sca", // Embed URL from Google Maps
 };
+
+export interface CalendarEvent {
+  id: number;
+  title: string;
+  start: Date;
+  end: Date;
+}
+
+export const calendarEvents: CalendarEvent[] = [
+  {
+    id: 1,
+    title: "Interactive therapy",
+    start: new Date(2024, 7, 1, 10, 0), // Year, Month (0-based), Day, Hour, Minute
+    end: new Date(2024, 7, 1, 12, 0),
+  },
+  {
+    id: 2,
+    title: "Dynamic psychotherapy",
+    start: new Date(2024, 7, 14, 8, 0),
+    end: new Date(2024, 7, 14, 10, 0),
+  },
+  {
+    id: 3,
+    title: "Humanitarian treatment",
+    start: new Date(2024, 7, 25, 12, 0),
+    end: new Date(2024, 7, 25, 14, 0),
+  },
+];

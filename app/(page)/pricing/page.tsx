@@ -1,6 +1,4 @@
-import { pricingPlans, servicesContent } from "@/app/data";
-import Image from "next/image";
-import Link from "next/link";
+import { pricingPlans } from "@/app/data";
 
 const page = async () => {
   return (
@@ -14,7 +12,7 @@ const page = async () => {
 
             {/* Services Text */}
             <div className="border-l-4 border-primary pl-6 md:w-1/2">
-              <h2 className="mb-4 text-4xl font-bold text-primary">Pricing</h2>
+              <h2 className="mb-4 text-4xl font-bold text-primary">calendar</h2>
               <p className="text-lg leading-relaxed text-gray-600">
                 Lorem ipsum dolor sit amet consectetur. Convallis est urna
                 adipiscing fringilla nulla diam lorem non mauris. Ultrices
