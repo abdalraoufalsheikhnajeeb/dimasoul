@@ -14,17 +14,47 @@ body {
 .shadow-custom {
   box-shadow: 10px 0px 0 10px #50895b;
 }
-.sec {
-  max-width: 90vw;
-  margin-inline: auto;
-  margin-block: 4rem;
+.container {
+  /* max-width: 90vw; */
+  /* margin-inline: auto;
+  margin-block: 4rem; */
 }
-@media screen and (min-width: 1024px) {
-  .sec {
+/* @media screen and (min-width: 1024px) {
+  .container {
     max-width: 80rem;
   }
 }
-.sec.m-0 {
+.container.m-0 {
   max-width: 90vw;
   margin-inline: auto;
+} */
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 600px; /* Small */
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px; /* Medium */
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px; /* Large */
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1120px; /* Extra Large */
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1280px; /* 2XL */
+  }
 }

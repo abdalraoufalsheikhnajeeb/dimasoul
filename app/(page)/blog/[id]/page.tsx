@@ -43,7 +43,7 @@ export default async function BlogDetail({ params }: BlogDetailParams) {
           </div>
         </div>
       </section>
-      <div className="sec mx-auto px-4">
+      <div className="container mx-auto px-4">
         {/* Blog Image */}
         <Image
           src={blog.image}

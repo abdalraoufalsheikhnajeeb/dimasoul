@@ -2,23 +2,23 @@ import Image from "next/image";
 
 const ConsultingSection = async () => {
   return (
-    <section className="w-screen bg-primaryBG">
-      <div className="sec relative mx-auto flex flex-col items-center justify-center md:flex-row md:space-x-8">
-        {/* Image Section */}
-        <div className="flex w-full items-center justify-center md:mb-0 md:w-1/2">
+    <section className="w-full bg-primaryBG">
+      <div className="container relative mx-auto flex flex-col items-center justify-center md:flex-row md:space-x-8">
+        <div className="relative flex h-full w-full items-center justify-center md:w-1/2">
           <Image
-            src="/images/test.webp"
+            src="/images/home_pride_image.webp"
             alt="Mentor Image"
-            width={400}
-            height={700}
-            className="lg:absolute lg:bottom-0 lg:left-8 lg:h-[125%]"
+            width={0}
+            height={0}
+            className="relative -top-6 h-2/3 w-full object-cover"
+            unoptimized
           />
         </div>
 
         {/* Text Section */}
         <div className="w-full rounded-xl bg-primaryBG p-8 md:w-1/2">
           <h4 className="text-lg font-bold text-primary">Mentor</h4>
-          <h2 className="mt-2 text-3xl font-bold lg:text-5xl">
+          <h2 className="mt-2 text-3xl font-bold 2xl:text-5xl">
             Introducing Experienced Consulting
           </h2>
 

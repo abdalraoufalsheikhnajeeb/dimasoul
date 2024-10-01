@@ -25,7 +25,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <div className="sec flex px-4 py-8 md:py-16">
+      <div className="container flex px-4 py-8 md:py-16">
         <p className="mx-auto w-1/2 max-w-2xl text-3xl">Our Blog For You</p>
         <p className="mx-auto w-1/2 max-w-2xl text-lg text-gray-700">
           Lorem ipsum dolor sit am et consectetur. Convallis est urna adipiscing
@@ -34,7 +34,7 @@ const page = () => {
         </p>
       </div>
 
-      <div className="sec hidden gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
+      <div className="container hidden gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
         {blogPosts.map((post) => (
           <div
             key={post.id}

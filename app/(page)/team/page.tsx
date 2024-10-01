@@ -24,7 +24,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <div className="sec flex px-4 py-8 md:py-16">
+      <div className="container flex px-4 py-8 md:py-16">
         <p className="mx-auto w-1/2 max-w-2xl text-3xl">
           Caring for Your Mental Health Get to Know Our Team of Experts
         </p>
@@ -35,7 +35,7 @@ const page = () => {
         </p>
       </div>
       {/* Team Grid */}
-      <section className="sec grid grid-cols-1 gap-4 py-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
+      <section className="container grid grid-cols-1 gap-4 py-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
         {teamMembers.map((member, index) => (
           <div
             key={index}

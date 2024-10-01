@@ -18,9 +18,9 @@ export default function TestimonialSection() {
   }, [emblaApi]);
 
   return (
-    <section className="lg:sec p-6 flex flex-col items-center justify-between bg-primaryBG py-16 pe-8 lg:flex-row">
+    <section className="flex flex-col items-center justify-between bg-primaryBG p-6 py-16 pe-8 lg:flex-row">
       {/* Section Header */}
-      <div className="pr-8">
+      <div className="lg:container">
         <h3 className="mb-2 text-lg font-semibold text-primary">
           Testimonials
         </h3>

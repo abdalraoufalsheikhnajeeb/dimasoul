@@ -12,7 +12,7 @@ const Footer = async () => {
         alt="x"
         className="absolute -top-16 h-full w-full"
       />
-      <div className="sec mx-auto px-4">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col items-start justify-between md:flex-row md:items-center">
           {/* Logo and Description */}
           <div className="mb-8 md:mb-0 md:w-1/4">

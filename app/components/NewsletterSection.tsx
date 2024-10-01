@@ -13,13 +13,13 @@ export default function NewsletterSection() {
   };
 
   return (
-    <section className="bg-accentBG w-screen py-16">
-      <div className="sec text-center">
+    <section className="w-screen bg-accentBG py-16">
+      <div className="container text-center">
         {/* Header Section */}
         <h2 className="mb-4 text-3xl font-bold text-primary">
           Join To Our Newsletter
         </h2>
-        <p className="mx-auto mb-8  text-gray-600">
+        <p className="mx-auto mb-8 text-gray-600">
           Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing
           fringilla nulla diam lorem non mauris. Ultrices aliquet at quam
           adipiscing feugiat interdum mattis. Placerat donec risus diam sed et.

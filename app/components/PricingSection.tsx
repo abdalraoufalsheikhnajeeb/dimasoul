@@ -2,7 +2,7 @@ import { pricingPlans } from "../data";
 
 const PricingSection = async () => {
   return (
-    <section className="sec">
+    <section className="container">
       <div className="mx-auto text-center">
         {/* Header */}
         <h4 className="text-lg font-bold text-primary">Pricing Plans</h4>

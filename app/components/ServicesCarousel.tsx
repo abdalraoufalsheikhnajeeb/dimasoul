@@ -6,7 +6,6 @@ import Image from "next/image";
 import { servicesImages } from "../data";
 
 const ServicesCarousel = () => {
-  // Initialize Embla Carousel with options
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,
     align: "start", // Aligns the first image to the start of the carousel
@@ -30,14 +29,15 @@ const ServicesCarousel = () => {
   }, [emblaApi]);
 
   return (
-    <section className="sec">
-      <h4 className="text-lg font-bold text-primary">Services</h4>
-      <h2 className="mt-2 text-3xl font-bold">
-        Empowering Minds Our Mental Health Consulting Services
-      </h2>
+    <section className="container">
+      <div className="flex flex-col items-center justify-center text-center">
+        <h4 className="text-lg font-bold text-primary">Services</h4>
+        <h2 className="max-w-2xl text-3xl font-bold">
+          Empowering Minds Our Mental Health Consulting Services
+        </h2>
+      </div>
 
       <div className="relative mt-8 px-8">
-        {/* Carousel Viewport */}
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
             {servicesImages.map((image, index) => (
@@ -48,17 +48,20 @@ const ServicesCarousel = () => {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  width={200}
-                  height={400}
+                  width={0}
+                  height={0}
                   className="aspect-[3/4] w-full rounded-xl object-cover transition-transform duration-300 hover:scale-105"
+                  unoptimized
                 />
                 {/* Overlay for hover */}
-                <div className="absolute inset-2 flex flex-col items-center justify-center rounded-xl bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
-                  <h3 className="mb-2 text-2xl font-semibold text-white">
+                <div className="absolute inset-2 flex flex-col items-center justify-center rounded-xl bg-black bg-opacity-50 p-4 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                  <h3 className="mb-2 text-center text-2xl font-semibold text-white">
                     {image.title}
                   </h3>
-                  <p className="mb-4 text-sm text-white">{image.description}</p>
-                  <button className="rounded-md bg-primary px-6 py-2 text-white hover:bg-primaryBG">
+                  <p className="mb-4 text-center text-sm text-white">
+                    {image.description}
+                  </p>
+                  <button className="rounded-md bg-primary px-6 py-2 text-white">
                     See More
                   </button>
                 </div>

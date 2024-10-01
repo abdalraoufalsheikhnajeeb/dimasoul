@@ -71,44 +71,49 @@ export const statisticsData = [
 
 export const appointmentsData = [
   {
+    id: 1,
     title: "Interactive therapy",
     location: "Washington",
     price: "200 EGP",
     date: "Mon, Aug 1",
     time: "10:00 - 12:00",
-    image: "/images/test.webp",
+    image: "/images/latest_girl_img.webp",
   },
   {
+    id: 2,
     title: "Dynamic psychotherapy",
     location: "Washington",
     price: "200 EGP",
     date: "Sun, Aug 14",
     time: "10:00 - 12:00",
-    image: "/images/test.webp",
+    image: "/images/latest_girl_img.webp",
   },
   {
+    id: 3,
     title: "Humanitarian treatment",
     location: "Washington",
     price: "200 EGP",
     date: "Thu, Aug 25",
     time: "10:00 - 12:00",
-    image: "/images/test.webp",
+    image: "/images/latest_girl_img.webp",
   },
   {
+    id: 4,
     title: "Cognitive Behavioral Therapy",
     location: "New York",
     price: "300 EGP",
     date: "Wed, Sep 1",
     time: "14:00 - 16:00",
-    image: "/images/test.webp",
+    image: "/images/latest_girl_img.webp",
   },
   {
+    id: 5,
     title: "Stress Management",
     location: "Los Angeles",
     price: "250 EGP",
     date: "Tue, Sep 7",
     time: "10:00 - 12:00",
-    image: "/images/test.webp",
+    image: "/images/latest_girl_img.webp",
   },
 ];
 
@@ -140,72 +145,72 @@ export const featuresData = [
 ];
 export const galleryImages = [
   {
-    src: "/images/test.webp",
+    src: "/images/testGallery/gallery_image_1.webp",
     alt: "Relaxation",
     caption: "Relaxation",
   },
   {
-    src: "/images/test.webp ",
+    src: "/images/Gallery/gallery_image_2.webp ",
     alt: "Mindfulness",
     caption: "Mindfulness",
   },
   {
-    src: "/images/test.webp ",
+    src: "/images/Gallery/gallery_image_3.webp ",
     alt: "Creativity",
     caption: "Creativity",
   },
   {
-    src: "/images/test.webp ",
+    src: "/images/Gallery/gallery_image_4.webp ",
     alt: "Freedom",
     caption: "Freedom",
   },
   {
-    src: "/images/test.webp ",
+    src: "/images/Gallery/gallery_image_5.webp ",
     alt: "Meditation",
     caption: "Meditation",
   },
   {
-    src: "/images/test.webp ",
+    src: "/images/Gallery/gallery_image_6.webp ",
     alt: "Balance",
     caption: "Balance",
   },
   {
-    src: "/images/test.webp ",
+    src: "/images/Gallery/gallery_image_7.webp ",
     alt: "Harmony",
     caption: "Harmony",
   },
   {
-    src: "/images/test.webp ",
+    src: "/images/Gallery/gallery_image_8.webp ",
     alt: "Joy",
     caption: "Joy",
   },
   {
-    src: "/images/test.webp ",
+    src: "/images/Gallery/gallery_image_9.webp ",
     alt: "Balance",
     caption: "Balance",
   },
   {
-    src: "/images/test.webp ",
+    src: "/images/Gallery/gallery_image_10.webp ",
     alt: "Harmony",
     caption: "Harmony",
   },
   {
-    src: "/images/test.webp ",
+    src: "/images/Gallery/gallery_image_1.webp ",
     alt: "Joy",
     caption: "Joy",
   },
   {
-    src: "/images/test.webp ",
+    src: "/images/Gallery/gallery_image_2.webp ",
     alt: "Balance",
     caption: "Balance",
   },
   {
-    src: "/images/test.webp ",
+    src: "/images/Gallery/gallery_image_3.webp ",
     alt: "Harmony",
     caption: "Harmony",
   },
   {
-    src: "/images/test.webp ",
+    src: "/images/Gallery/gallery_image_4.webp ",
     alt: "Joy",
     caption: "Joy",
   },
@@ -214,19 +219,19 @@ export const galleryImages = [
 // team.js
 export const teamImages = [
   {
-    src: "/images/test.webp",
+    src: "/images/team_img_1.webp",
     alt: "Team Working Together",
     width: 600,
     height: 400,
   },
   {
-    src: "/images/test.webp",
+    src: "/images/team_img_2.webp",
     alt: "Counseling Session",
     width: 300,
     height: 200,
   },
   {
-    src: "/images/test.webp",
+    src: "/images/team_img_3.webp",
     alt: "Consultant Working",
     width: 300,
     height: 200,
@@ -235,37 +240,37 @@ export const teamImages = [
 // services.js
 export const servicesImages = [
   {
-    src: "/images/test.webp",
+    src: "/images/service_img_1.webp",
     alt: "Service Image 1",
     title: "Mental Counseling",
     description: "Lorem ipsum dolor sit amet consectetur.",
   },
   {
-    src: "/images/test.webp",
+    src: "/images/service_img_2.webp",
     alt: "Service Image 2",
     title: "Art Therapy",
     description: "Ultrices aliquet at quam adipiscing.",
   },
   {
-    src: "/images/test.webp",
+    src: "/images/service_img_3.webp",
     alt: "Service Image 3",
     title: "Group Sessions",
     description: "Adipiscing fringilla nulla diam lorem.",
   },
   {
-    src: "/images/test.webp",
+    src: "/images/service_img_4.webp",
     alt: "Service Image 1",
     title: "Mental Counseling",
     description: "Lorem ipsum dolor sit amet consectetur.",
   },
   {
-    src: "/images/test.webp",
+    src: "/images/service_img_2.webp",
     alt: "Service Image 2",
     title: "Art Therapy",
     description: "Ultrices aliquet at quam adipiscing.",
   },
   {
-    src: "/images/test.webp",
+    src: "/images/service_img_4.webp",
     alt: "Service Image 3",
     title: "Group Sessions",
     description: "Adipiscing fringilla nulla diam lorem.",
@@ -281,7 +286,7 @@ export const blogPosts = [
       "How Mental Health Consultants Can Help Individuals and Organizations Thrive",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis. Placerat donec risus diam sed et. A in ullamcorper ipsum justo vestibulum sit cursus...",
-    image: "/images/test.webp",
+    image: "/images/Gallery/gallery_image_2.webp",
     content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. 
       In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam 
@@ -295,7 +300,7 @@ export const blogPosts = [
     fullTitle: "The Importance of Mental Health Consultants in the Workplace",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis...",
-    image: "/images/test.webp",
+    image: "/images/Gallery/gallery_image_2.webp",
     content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. 
       Nunc ut sem vitae risus tristique posuere.
@@ -308,7 +313,7 @@ export const blogPosts = [
     fullTitle: "The Importance of Mental Health Consultants in the Workplace",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis...",
-    image: "/images/test.webp",
+    image: "/images/Gallery/gallery_image_2.webp",
     content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. 
       Nunc ut sem vitae risus tristique posuere.
@@ -321,7 +326,7 @@ export const blogPosts = [
     fullTitle: "The Importance of Mental Health Consultants in the Workplace",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis...",
-    image: "/images/test.webp",
+    image: "/images/Gallery/gallery_image_2.webp",
     content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. 
       Nunc ut sem vitae risus tristique posuere.
@@ -334,7 +339,7 @@ export const blogPosts = [
     fullTitle: "The Importance of Mental Health Consultants in the Workplace",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis...",
-    image: "/images/test.webp",
+    image: "/images/Gallery/gallery_image_2.webp",
     content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. 
       Nunc ut sem vitae risus tristique posuere.
@@ -347,7 +352,7 @@ export const blogPosts = [
     fullTitle: "The Importance of Mental Health Consultants in the Workplace",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis...",
-    image: "/images/test.webp",
+    image: "/images/Gallery/gallery_image_2.webp",
     content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. 
       Nunc ut sem vitae risus tristique posuere.
@@ -360,7 +365,7 @@ export const blogPosts = [
     fullTitle: "The Importance of Mental Health Consultants in the Workplace",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis...",
-    image: "/images/test.webp",
+    image: "/images/Gallery/gallery_image_2.webp",
     content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. 
       Nunc ut sem vitae risus tristique posuere.
@@ -765,7 +770,6 @@ export const calendarEvents: CalendarEvent[] = [
   },
 ];
 
-
 // content.ts
 export interface Testimonial {
   id: number;
@@ -801,4 +805,3 @@ export const testimonials: Testimonial[] = [
     image: "/images/testimonial3.jpg",
   },
 ];
-

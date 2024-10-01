@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { blogPosts } from "../data";
 import Link from "next/link";
+import BlogCard from "./BlogCard";
 
 const BlogSection = async () => {
   return (
-    <section className="sec">
+    <section className="container">
       {/* Header */}
       <div className="mb-8 flex items-center justify-between">
         <div>
@@ -31,32 +32,9 @@ const BlogSection = async () => {
       </div>
 
       {/* Blog Grid for Desktop */}
-      <div className="sec hidden gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
+      <div className="container hidden gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
         {blogPosts.slice(0, 6).map((post) => (
-          <div
-            key={post.id}
-            className="overflow-hidden rounded-xl bg-white shadow-md transition-shadow hover:shadow-xl"
-          >
-            <Image
-              src={post.image}
-              alt={post.title}
-              width={300}
-              height={400}
-              className="aspect-[3/4] h-48 w-full object-cover"
-            />
-            <div className="p-4">
-              <h3 className="line-clamp-2 text-lg font-semibold">
-                {post.title}
-              </h3>
-              <p className="mt-2 text-sm text-gray-600">
-                {post.description.split(" ").slice(0, 50).join(" ")}...
-                <Link href={post.link} className="text-primary">
-                  {" "}
-                  See more
-                </Link>
-              </p>
-            </div>
-          </div>
+          <BlogCard {...post} />
         ))}
       </div>
 

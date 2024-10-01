@@ -11,7 +11,7 @@ const FaqSection = () => {
   };
 
   return (
-    <section className="sec w-full">
+    <section className="container w-full">
       {/* FAQ Heading */}
       <div className="flex flex-col-reverse items-end justify-center gap-8 md:flex-row">
         {/* FAQ Content */}

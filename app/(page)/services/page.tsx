@@ -26,7 +26,7 @@ const page = async () => {
         </div>
       </section>
 
-      <section className="sec bg-white py-8 md:py-16">
+      <section className="container bg-white py-8 md:py-16">
         <div className="mx-auto px-4 text-center">
           {/* Section Title */}
           <h3 className="mb-2 text-lg font-semibold text-primary md:text-xl">

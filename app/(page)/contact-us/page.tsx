@@ -1,7 +1,4 @@
-import {
-  contactInfo,
-  mapInfo,
-} from "@/app/data";
+import { contactInfo, mapInfo } from "@/app/data";
 import Image from "next/image";
 
 const page = async () => {
@@ -30,7 +27,7 @@ const page = async () => {
         </div>
       </section>
 
-      <section className="sec mx-auto gap-4 px-4 md:flex md:items-start md:justify-between">
+      <section className="container mx-auto gap-4 px-4 md:flex md:items-start md:justify-between">
         {/* Contact Information */}
         <div className="mb-8 md:mb-0 md:w-1/2">
           <h3 className="mb-4 text-lg font-semibold text-primary">
@@ -115,7 +112,7 @@ const page = async () => {
         </div>
       </section>
 
-      <section className="sec px-4">
+      <section className="container px-4">
         {/* Section Header */}
         <h3 className="mb-2 text-lg font-semibold text-primary">
           {mapInfo.subtitle}

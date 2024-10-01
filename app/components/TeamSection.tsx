@@ -1,13 +1,14 @@
 import Image from "next/image";
 import { teamImages } from "../data";
 import Link from "next/link";
+import Button from "./Button";
 
 const TeamSection = async () => {
   return (
-    <section className="py-16">
-      <div className="sec mx-auto flex flex-col items-center md:flex-row md:space-x-8">
+    <section className="container">
+      <div className="container mx-auto flex flex-col items-center md:flex-row md:space-x-8">
         {/* Text Section */}
-        <div className="mb-8 w-full text-center md:mb-0 md:w-1/2 md:text-left">
+        <div className="flex w-full flex-col gap-6 text-center md:mb-0 md:w-1/2 md:text-left">
           <h4 className="text-lg font-bold text-primary">Team</h4>
           <h2 className="mt-2 text-3xl font-bold">
             Caring for Your Mental Health
@@ -20,9 +21,7 @@ const TeamSection = async () => {
             at quam adipiscing.
           </p>
           <Link href="/team">
-            <button className="mt-6 rounded-full bg-primary px-6 py-3 text-white hover:bg-green-700">
-              See More
-            </button>
+            <Button title="See More" />
           </Link>
         </div>
 

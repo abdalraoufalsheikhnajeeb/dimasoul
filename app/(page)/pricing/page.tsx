@@ -24,7 +24,7 @@ const page = async () => {
         </div>
       </section>
 
-      <section className="sec">
+      <section className="container">
         <div className="mx-auto text-center">
           {/* Header */}
           <h4 className="text-lg font-bold text-primary">Pricing Plans</h4>

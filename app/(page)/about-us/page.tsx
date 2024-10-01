@@ -29,7 +29,7 @@ const AboutUsSection = async () => {
           </div>
         </div>
       </section>
-      <div className="sec">
+      <div className="container">
         <section className="flex flex-col items-center md:flex md:space-x-8 lg:flex-row lg:items-start">
           {/* Image Section */}
           <div className="mb-8 w-full md:mb-0 md:w-1/2">
