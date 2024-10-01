@@ -56,7 +56,8 @@ const Footer = async () => {
             </h5>
             <ul className="mt-4 space-y-2 text-gray-300">
               {footerData.contact.details.map((detail, index) => (
-                <li key={index}>
+                <li className="flex items-center gap-3" key={index}>
+                  <Image width={20} height={20} src={detail.icon} alt="x" />
                   {detail.text}
                 </li>
               ))}

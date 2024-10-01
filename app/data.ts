@@ -468,9 +468,9 @@ export const footerData = {
   contact: {
     title: "Contact",
     details: [
-      { icon: "fas fa-phone-alt", text: "+14 5464 8272" },
-      { icon: "fas fa-envelope", text: "rona@domain.com" },
-      { icon: "fas fa-map-marker-alt", text: "Lazy Tower 192, Burn Swiss" },
+      { icon: "/images/Call.svg", text: "+14 5464 8272" },
+      { icon: "/images/Message.svg", text: "rona@domain.com" },
+      { icon: "/images/Location.svg", text: "Lazy Tower 192, Burn Swiss" },
     ],
   },
   links: {
