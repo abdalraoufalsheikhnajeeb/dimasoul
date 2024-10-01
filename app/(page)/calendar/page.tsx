@@ -1,11 +1,10 @@
 import ProgramCalendar from "@/app/components/ProgramCalendar";
 
-
 const page = async () => {
   return (
     <div>
       <section className="bg-primaryBG">
-        <div className="sec mx-auto px-4 py-8 text-center md:py-16 md:text-left">
+        <div className="mx-auto max-w-[90vw] px-4 py-8 text-center md:py-16 md:text-left lg:max-w-7xl">
           {/* Services Section */}
           <div className="mt-16 md:flex md:items-center md:space-x-8">
             {/* Vertical Line */}
@@ -24,7 +23,7 @@ const page = async () => {
           </div>
         </div>
       </section>
-      <ProgramCalendar/>
+      <ProgramCalendar />
     </div>
   );
 };

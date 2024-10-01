@@ -16,7 +16,7 @@ const ConsultingSection = async () => {
         </div>
 
         {/* Text Section */}
-        <div className="w-full rounded-lg bg-primaryBG p-8 md:w-1/2">
+        <div className="w-full rounded-xl bg-primaryBG p-8 md:w-1/2">
           <h4 className="text-lg font-bold text-primary">Mentor</h4>
           <h2 className="mt-2 text-3xl font-bold lg:text-5xl">
             Introducing Experienced Consulting
@@ -29,7 +29,7 @@ const ConsultingSection = async () => {
               <Image
                 width={100}
                 height={100}
-                src="/images/test.webp"
+                src="/images/Growth.svg"
                 alt="clock"
                 className=""
               />
@@ -47,7 +47,7 @@ const ConsultingSection = async () => {
               <Image
                 width={100}
                 height={100}
-                src="/images/test.webp"
+                src="/images/Burnout.svg"
                 alt="clock"
                 className=""
               />

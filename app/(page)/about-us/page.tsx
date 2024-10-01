@@ -10,7 +10,7 @@ const AboutUsSection = async () => {
   return (
     <>
       <section className="bg-primaryBG">
-        <div className="sec mx-auto px-4 py-8 text-center md:py-16 md:text-left">
+        <div className="mx-auto max-w-[90vw] px-4 py-8 text-center md:py-16 md:text-left lg:max-w-7xl">
           {/* About Us Section */}
           <div className="mt-16 md:flex md:items-center md:space-x-8">
             {/* Vertical Line */}
@@ -44,13 +44,13 @@ const AboutUsSection = async () => {
               alt="Image"
               width={700}
               height={400}
-              className="rounded-lg"
+              className="rounded-xl"
             />
           </div>
 
           {/* Text Section */}
           <div className="w-full md:w-1/2">
-            <div className="rounded-lg bg-accentBG p-4 text-center">
+            <div className="rounded-xl bg-accentBG p-4 text-center">
               <h4 className="mb-2 text-xl font-bold text-primary">
                 Our Mission
               </h4>
@@ -77,7 +77,7 @@ const AboutUsSection = async () => {
                 alt="Mental Health Journey"
                 width={700}
                 height={400}
-                className="rounded-lg"
+                className="rounded-xl"
               />
             </div>
 
@@ -117,7 +117,7 @@ const AboutUsSection = async () => {
               <p className="mb-4 leading-relaxed text-gray-600">
                 {teamContent.paragraph}
               </p>
-              <button className="hover:bg-primary-dark rounded-lg bg-primary px-6 py-2 font-bold text-white">
+              <button className="hover:bg-primary-dark rounded-xl bg-primary px-6 py-2 font-bold text-white">
                 {teamContent.buttonText}
               </button>
             </div>
@@ -131,7 +131,7 @@ const AboutUsSection = async () => {
                     alt={image.alt}
                     width={300}
                     height={200}
-                    className="rounded-lg"
+                    className="rounded-xl"
                   />
                 </div>
               ))}
@@ -148,7 +148,7 @@ const AboutUsSection = async () => {
                 alt={successStoryContent.imageAlt}
                 width={700}
                 height={400}
-                className="rounded-lg"
+                className="rounded-xl"
               />
             </div>
 

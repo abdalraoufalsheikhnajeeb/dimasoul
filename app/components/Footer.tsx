@@ -1,18 +1,28 @@
+import Image from "next/image";
 import { footerData } from "../data";
+import Link from "next/link";
 
 const Footer = async () => {
   return (
-    <footer className="bg-green-900 py-12 text-white">
+    <footer className="relative bg-green-900 py-12 text-white">
+      <Image
+        width={1280}
+        height={780}
+        src={"/images/texture.svg"}
+        alt="x"
+        className="absolute -top-16 h-full w-full"
+      />
       <div className="sec mx-auto px-4">
         <div className="flex flex-col items-start justify-between md:flex-row md:items-center">
           {/* Logo and Description */}
           <div className="mb-8 md:mb-0 md:w-1/4">
-            <h4 className="text-3xl font-bold text-white">
-              <span className="text-orange-400">
-                {footerData.logo.name.split(" ")[0]}
-              </span>{" "}
-              {footerData.logo.name.split(" ")[1]}
-            </h4>
+            <Image
+              width={200}
+              height={400}
+              src={"/images/logo-name.png"}
+              alt="x"
+            />
+
             <p className="mt-4 text-gray-300">{footerData.logo.description}</p>
             <div className="my-6 w-16 border-t border-white"></div>
 
@@ -47,7 +57,7 @@ const Footer = async () => {
             <ul className="mt-4 space-y-2 text-gray-300">
               {footerData.contact.details.map((detail, index) => (
                 <li key={index}>
-                  <i className={`${detail.icon} mr-2`}></i> {detail.text}
+                  {detail.text}
                 </li>
               ))}
             </ul>
@@ -65,10 +75,50 @@ const Footer = async () => {
             </ul>
           </div>
         </div>
-
-        {/* Footer Bottom */}
         <div className="mt-12 border-t border-white pt-6 text-center">
-          <p className="text-gray-300">{footerData.logo.email}</p>
+          {/* Footer Bottom */}
+          <div className="flex flex-col items-center justify-center gap-4">
+            <div className="flex gap-4">
+              <Link href="#">
+                {" "}
+                <Image
+                  width={50}
+                  height={50}
+                  src={"/images/in.svg"}
+                  alt="x"
+                />{" "}
+              </Link>
+              <Link href="#">
+                {" "}
+                <Image
+                  width={50}
+                  height={50}
+                  src={"/images/face.svg"}
+                  alt="x"
+                />{" "}
+              </Link>
+              <Link href="#">
+                {" "}
+                <Image
+                  width={50}
+                  height={50}
+                  src={"/images/insta.svg"}
+                  alt="x"
+                />{" "}
+              </Link>
+              <Link href="#">
+                {" "}
+                <Image
+                  width={50}
+                  height={50}
+                  src={"/images/whats.svg"}
+                  alt="x"
+                />{" "}
+              </Link>
+            </div>
+
+            <p className="text-gray-300">{footerData.logo.email}</p>
+          </div>
         </div>
       </div>
     </footer>

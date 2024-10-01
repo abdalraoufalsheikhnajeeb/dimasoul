@@ -6,21 +6,21 @@ const QuoteSection = async () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/test.webp"
+          src="/images/leafs.jpg"
           alt="Background Image"
           layout="fill"
           objectFit="cover"
-          className="opacity-60"
+          className=""
         />
       </div>
 
       {/* Quote Text */}
       <div className="sec relative z-10 p-6">
-        <div className="text-3xl font-bold leading-relaxed text-white md:text-4xl">
-          <span className="text-6xl font-bold md:text-7xl">“</span>
+        <div className="text-2xl font-bold leading-relaxed text-white md:text-5xl">
+          <span className="text-7xl font-bold md:text-8xl">“</span>
           Self-care is not a luxury. It’s a necessity. Without it, we cannot be
           our best selves, mentally, emotionally, or physically.
-          <span className="text-6xl font-bold md:text-7xl">”</span>
+          <span className="text-7xl font-bold md:text-8xl">”</span>
         </div>
       </div>
     </section>

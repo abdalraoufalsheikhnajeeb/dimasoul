@@ -12,7 +12,7 @@ function shuffleArray(array: any) {
   return array.sort(() => Math.random() - 0.5);
 }
 
-export default function BlogDetail({ params }: BlogDetailParams) {
+export default async function BlogDetail({ params }: BlogDetailParams) {
   const blog = blogPosts.find((post) => post.id.toString() === params.id);
 
   if (!blog) {
@@ -22,7 +22,7 @@ export default function BlogDetail({ params }: BlogDetailParams) {
   return (
     <section className="py-8 md:py-16">
       <section className="bg-primaryBG">
-        <div className="sec mx-auto px-4 py-8 text-center md:py-16 md:text-left">
+        <div className="mx-auto max-w-[90vw] px-4 py-8 text-center md:py-16 md:text-left lg:max-w-7xl">
           {/* Services Section */}
           <div className="mt-16 md:flex md:items-center md:space-x-8">
             {/* Vertical Line */}
@@ -50,7 +50,7 @@ export default function BlogDetail({ params }: BlogDetailParams) {
           alt={blog.fullTitle}
           width={800}
           height={400}
-          className="mb-8 w-full rounded-lg"
+          className="mb-8 w-full rounded-xl"
         />
         <div className="flex gap-8">
           <div className="flex flex-col">
@@ -60,7 +60,7 @@ export default function BlogDetail({ params }: BlogDetailParams) {
           </div>
           <div className="flex flex-col">
             <p className="text-2xl font-bold">Recommendation Blog</p>
-            <div className="flex flex-col gap-4 w-80">
+            <div className="flex w-80 flex-col gap-4">
               {randomBlogPosts.map((post: any) => (
                 <div
                   key={post.id}
@@ -71,7 +71,7 @@ export default function BlogDetail({ params }: BlogDetailParams) {
                     alt={post.title}
                     width={200}
                     height={200}
-                    className="aspect-square h-32 w-full rounded-lg object-cover"
+                    className="aspect-square h-32 w-full rounded-xl object-cover"
                   />
                   <div className="p-4">
                     <h3 className="line-clamp-2 text-lg font-semibold">

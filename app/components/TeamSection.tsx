@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { teamImages } from "../data";
+import Link from "next/link";
 
 const TeamSection = async () => {
   return (
@@ -18,9 +19,11 @@ const TeamSection = async () => {
             adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet
             at quam adipiscing.
           </p>
-          <button className="mt-6 rounded-full bg-primary px-6 py-3 text-white hover:bg-green-700">
-            See More
-          </button>
+          <Link href="/team">
+            <button className="mt-6 rounded-full bg-primary px-6 py-3 text-white hover:bg-green-700">
+              See More
+            </button>
+          </Link>
         </div>
 
         {/* Images Section */}
@@ -32,7 +35,7 @@ const TeamSection = async () => {
               alt={teamImages[0].alt}
               width={600}
               height={400}
-              className="h-full w-full rounded-lg object-cover"
+              className="h-full w-full rounded-xl object-cover"
             />
           </div>
 
@@ -43,7 +46,7 @@ const TeamSection = async () => {
               alt={teamImages[1].alt}
               width={300}
               height={200}
-              className="h-full w-full rounded-lg object-cover"
+              className="h-full w-full rounded-xl object-cover"
             />
           </div>
           <div className="col-span-1">
@@ -52,7 +55,7 @@ const TeamSection = async () => {
               alt={teamImages[2].alt}
               width={300}
               height={200}
-              className="h-full w-full rounded-lg object-cover"
+              className="h-full w-full rounded-xl object-cover"
             />
           </div>
         </div>

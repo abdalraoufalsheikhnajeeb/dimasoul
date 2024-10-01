@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div>
       <section className="bg-primaryBG">
-        <div className="sec mx-auto px-4 py-8 text-center md:py-16 md:text-left">
+        <div className="mx-auto max-w-[90vw] px-4 py-8 text-center md:py-16 md:text-left lg:max-w-7xl">
           {/* Services Section */}
           <div className="mt-16 md:flex md:items-center md:space-x-8">
             {/* Vertical Line */}
@@ -25,7 +25,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <div className="flex px-4 py-8 md:py-16 sec">
+      <div className="sec flex px-4 py-8 md:py-16">
         <p className="mx-auto w-1/2 max-w-2xl text-3xl">Our Blog For You</p>
         <p className="mx-auto w-1/2 max-w-2xl text-lg text-gray-700">
           Lorem ipsum dolor sit am et consectetur. Convallis est urna adipiscing
@@ -34,11 +34,11 @@ const page = () => {
         </p>
       </div>
 
-      <div className="hidden gap-6 md:grid md:grid-cols-2 lg:grid-cols-3 sec">
+      <div className="sec hidden gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
         {blogPosts.map((post) => (
           <div
             key={post.id}
-            className="overflow-hidden rounded-lg bg-white shadow-md transition-shadow hover:shadow-xl"
+            className="overflow-hidden rounded-xl bg-white shadow-md transition-shadow hover:shadow-xl"
           >
             <Image
               src={post.image}

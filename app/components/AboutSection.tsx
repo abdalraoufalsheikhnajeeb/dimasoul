@@ -11,7 +11,7 @@ const AboutSection = async () => {
             alt="Therapy Session"
             width={600}
             height={600}
-            className="aspect-square rounded-lg"
+            className="aspect-square rounded-xl"
           />
         </div>
 

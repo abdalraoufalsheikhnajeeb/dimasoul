@@ -1,12 +1,14 @@
-import { contactInfo, mapInfo, pricingPlans, servicesContent } from "@/app/data";
+import {
+  contactInfo,
+  mapInfo,
+} from "@/app/data";
 import Image from "next/image";
-import Link from "next/link";
 
 const page = async () => {
   return (
     <div>
       <section className="bg-primaryBG">
-        <div className="sec mx-auto px-4 py-8 text-center md:py-16 md:text-left">
+        <div className="mx-auto max-w-[90vw] px-4 py-8 text-center md:py-16 md:text-left lg:max-w-7xl">
           {/* Services Section */}
           <div className="mt-16 md:flex md:items-center md:space-x-8">
             {/* Vertical Line */}
@@ -57,7 +59,7 @@ const page = async () => {
         </div>
 
         {/* Contact Form */}
-        <div className="rounded-lg bg-primaryBG p-8 md:w-1/2">
+        <div className="rounded-xl bg-primaryBG p-8 md:w-1/2">
           <form>
             <div className="mb-4">
               <label
@@ -70,7 +72,7 @@ const page = async () => {
                 type="text"
                 id="name"
                 placeholder={contactInfo.form.namePlaceholder}
-                className="w-full rounded-lg border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full rounded-xl border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
 
@@ -85,7 +87,7 @@ const page = async () => {
                 type="email"
                 id="email"
                 placeholder={contactInfo.form.emailPlaceholder}
-                className="w-full rounded-lg border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full rounded-xl border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
 
@@ -99,13 +101,13 @@ const page = async () => {
               <textarea
                 id="message"
                 placeholder={contactInfo.form.messagePlaceholder}
-                className="h-40 w-full rounded-lg border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                className="h-40 w-full rounded-xl border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="hover:bg-primary-dark w-full rounded-lg bg-primary py-3 font-semibold text-white"
+              className="hover:bg-primary-dark w-full rounded-xl bg-primary py-3 font-semibold text-white"
             >
               {contactInfo.form.buttonText}
             </button>
@@ -113,26 +115,25 @@ const page = async () => {
         </div>
       </section>
 
-        <section className="sec px-4">
-          {/* Section Header */}
-          <h3 className="mb-2 text-lg font-semibold text-primary">
-            {mapInfo.subtitle}
-          </h3>
-          <h2 className="mb-8 text-3xl font-bold">{mapInfo.title}</h2>
+      <section className="sec px-4">
+        {/* Section Header */}
+        <h3 className="mb-2 text-lg font-semibold text-primary">
+          {mapInfo.subtitle}
+        </h3>
+        <h2 className="mb-8 text-3xl font-bold">{mapInfo.title}</h2>
 
-          {/* Map Embed */}
-          <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-lg">
-            <iframe
-              src={mapInfo.mapEmbedUrl}
-              width="100%"
-              height="100%"
-              allowFullScreen={true}
-              loading="lazy"
-              className="border-0"
-            ></iframe>
-          </div>
-        </section>
-   
+        {/* Map Embed */}
+        <div className="relative h-96 w-full overflow-hidden rounded-xl shadow-lg">
+          <iframe
+            src={mapInfo.mapEmbedUrl}
+            width="100%"
+            height="100%"
+            allowFullScreen={true}
+            loading="lazy"
+            className="border-0"
+          ></iframe>
+        </div>
+      </section>
     </div>
   );
 };

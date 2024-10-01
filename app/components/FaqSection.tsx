@@ -13,7 +13,7 @@ const FaqSection = () => {
   return (
     <section className="sec w-full">
       {/* FAQ Heading */}
-      <div className="flex flex-col-reverse items-center justify-center gap-8 md:flex-row">
+      <div className="flex flex-col-reverse items-end justify-center gap-8 md:flex-row">
         {/* FAQ Content */}
         <div className="grow md:w-1/2">
           <h4 className="text-lg font-bold text-primary">FAQ</h4>
@@ -22,7 +22,7 @@ const FaqSection = () => {
           {/* Accordions */}
           <div className="mt-8 space-y-4">
             {faqData.map((faq, index) => (
-              <div key={faq.id} className="rounded-lg bg-gray-100 shadow-md">
+              <div key={faq.id} className="rounded-xl bg-gray-100 shadow-md">
                 <button
                   onClick={() => toggleAccordion(index)}
                   className="flex w-full items-center justify-between px-4 py-4 text-left"
@@ -34,47 +34,38 @@ const FaqSection = () => {
                   >
                     {faq.question}
                   </span>
-                  <span>
-                    {openIndex === index ? (
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-primary"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 15l7-7 7 7"
-                        />
-                      </svg>
-                    ) : (
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M19 9l-7 7-7-7"
-                        />
-                      </svg>
-                    )}
+                  <span
+                    className={`transform transition-transform duration-300 ${
+                      openIndex === index ? "rotate-180" : "rotate-0"
+                    }`}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 text-primary"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
                   </span>
                 </button>
 
                 {/* Answer Section */}
-                {openIndex === index && (
+                <div
+                  className={`transition-max-height overflow-hidden duration-500 ease-in-out ${
+                    openIndex === index ? "max-h-screen" : "max-h-0"
+                  }`}
+                >
                   <div className="px-4 pb-4 text-gray-600">
                     <p>{faq.answer}</p>
                   </div>
-                )}
+                </div>
               </div>
             ))}
           </div>
@@ -85,9 +76,9 @@ const FaqSection = () => {
           <Image
             src="/images/test.webp" // Replace with your actual image path
             alt="FAQ Image"
-            width={500}
-            height={300}
-            className="rounded-lg"
+            width={600}
+            height={400}
+            className="rounded-xl"
           />
         </div>
       </div>

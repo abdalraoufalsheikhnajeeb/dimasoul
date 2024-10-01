@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import format from "date-fns/format";
 import parse from "date-fns/parse";
@@ -21,7 +21,7 @@ const localizer = dateFnsLocalizer({
   locales,
 });
 
-export default function ProgramCalendar() {
+export default async function ProgramCalendar() {
   return (
     <section className="bg-white py-16">
       <div className="container mx-auto px-4">
@@ -34,7 +34,7 @@ export default function ProgramCalendar() {
         </p>
 
         {/* Big Calendar Component */}
-        <div className="rounded-lg bg-primaryBG p-6 shadow-lg">
+        <div className="rounded-xl bg-primaryBG p-6 shadow-lg">
           <Calendar
             localizer={localizer}
             events={calendarEvents} // Dynamic events
@@ -50,14 +50,14 @@ export default function ProgramCalendar() {
                 <div className="mb-4 flex items-center justify-between">
                   <button
                     onClick={() => onNavigate("PREV")}
-                    className="rounded-lg bg-gray-200 px-4 py-2"
+                    className="rounded-xl bg-gray-200 px-4 py-2"
                   >
                     &#8249;
                   </button>
                   <span className="text-lg font-bold">{label}</span>
                   <button
                     onClick={() => onNavigate("NEXT")}
-                    className="rounded-lg bg-gray-200 px-4 py-2"
+                    className="rounded-xl bg-gray-200 px-4 py-2"
                   >
                     &#8250;
                   </button>
@@ -77,7 +77,7 @@ export default function ProgramCalendar() {
 
         {/* Program List Button */}
         <div className="mt-8 text-center">
-          <button className="hover:bg-primary-dark rounded-lg bg-primary px-6 py-3 text-white">
+          <button className="hover:bg-primary-dark rounded-xl bg-primary px-6 py-3 text-white">
             Program List
           </button>
         </div>

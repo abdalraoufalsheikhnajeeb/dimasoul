@@ -26,12 +26,16 @@ export interface MenuItem {
 }
 
 const SubMenu: React.FC<SubMenuProps> = memo(({ submenuItems, submenuId }) => (
-  <ul id={submenuId} className="absolute hidden group-hover:block" role="menu">
+  <ul
+    id={submenuId}
+    className="absolute hidden rounded-lg bg-white shadow-md group-hover:block"
+    role="menu"
+  >
     {submenuItems.map((subItem, subIndex) => (
       <li key={subIndex}>
         <Link
           href={subItem.href}
-          className="mt-4 whitespace-nowrap rounded-lg bg-white px-4 py-2 text-lg text-black shadow-lg hover:bg-gray-100"
+          className="mt-4 w-full whitespace-nowrap px-4 py-2 text-lg text-black hover:bg-gray-100"
           role="menuitem"
         >
           {subItem.title}
@@ -81,12 +85,7 @@ const NavBar: React.FC = () => {
       <div className="mx-auto flex items-center justify-between px-4">
         {/* Left: Logo */}
         <div className="flex items-center">
-          <Image
-            src="/images/logo.svg"
-            alt="Logo"
-            width={50}
-            height={50}
-          />
+          <Image src="/images/logo.svg" alt="Logo" width={50} height={50} />
         </div>
 
         {/* Center: Menu */}
@@ -120,7 +119,7 @@ const NavBar: React.FC = () => {
                     <Image
                       width={20}
                       height={20}
-                      src={"/images/test.webp"}
+                      src={"/images/arr-down.svg"}
                       alt="arrow down"
                     />
                   </button>
@@ -136,7 +135,7 @@ const NavBar: React.FC = () => {
         {/* Right: Contact Us Button */}
         <div className="hidden md:flex">
           <Link
-            href="/contact"
+            href="/contact-us"
             className="rounded-full bg-green-900 px-4 py-2 text-white hover:bg-green-700"
           >
             Contact Us
@@ -152,12 +151,17 @@ const NavBar: React.FC = () => {
             aria-label="Toggle navigation menu"
           >
             {isOpen ? (
-              <Image width={80} height={80} src={"/images/test.webp"} alt="x" />
+              <Image
+                width={80}
+                height={80}
+                src={"/images/arr-down.svg"}
+                alt="x"
+              />
             ) : (
               <Image
                 width={80}
                 height={80}
-                src={"/images/test.webp"}
+                src={"/images/arr-down.svg"}
                 alt="burger"
               />
             )}
@@ -189,7 +193,7 @@ const NavBar: React.FC = () => {
                         <Image
                           width={20}
                           height={20}
-                          src={"/images/test.webp"}
+                          src={"/images/arr-down.svg"}
                           alt="burger"
                         />
                       </button>
@@ -210,7 +214,7 @@ const NavBar: React.FC = () => {
                 </li>
               ))}
               <li className="mt-auto rounded-full bg-green-900 px-8 py-4 text-xl text-white shadow-md hover:bg-green-700">
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/contact-us">Contact Us</Link>
               </li>
             </ul>
           </div>

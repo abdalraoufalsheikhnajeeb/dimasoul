@@ -6,10 +6,13 @@ const Gallery = async () => {
   return (
     <section className="sec flex flex-col gap-6">
       {/* Heading */}
-      <div className="flex items-center justify-center lg:justify-between">
+      <div className="flex w-full items-center justify-center lg:justify-between">
         <h2 className="text-3xl font-bold lg:text-2xl">Gallery</h2>
 
-        <Link href="gallery" className="hidden text-green-600 hover:underline lg:block">
+        <Link
+          href="gallery"
+          className="hidden text-green-600 hover:underline lg:block"
+        >
           See More <span className="">&rarr;</span>
         </Link>
       </div>
@@ -19,7 +22,7 @@ const Gallery = async () => {
         {galleryImages.slice(0, 8).map((image, index) => (
           <div
             key={index}
-            className={`group relative overflow-hidden rounded-lg ${index === 0 ? "md:col-span-1 md:row-span-3" : ""} ${index === 1 ? "md:col-span-2 md:row-span-1" : ""} ${index === 2 ? "md:col-span-1 md:row-span-1" : ""} ${index === 3 ? "md:col-span-2 md:row-span-2" : ""} ${index === 4 ? "md:col-span-1 md:row-span-2" : ""} ${index === 5 ? "md:col-span-2 md:row-span-1" : ""} ${index === 6 ? "md:col-span-1 md:row-span-1" : ""} ${index === 7 ? "md:col-span-1 md:row-span-1" : ""}`}
+            className={`group relative overflow-hidden rounded-xl ${index === 0 ? "md:col-span-1 md:row-span-3" : ""} ${index === 1 ? "md:col-span-2 md:row-span-1" : ""} ${index === 2 ? "md:col-span-1 md:row-span-1" : ""} ${index === 3 ? "md:col-span-2 md:row-span-2" : ""} ${index === 4 ? "md:col-span-1 md:row-span-2" : ""} ${index === 5 ? "md:col-span-2 md:row-span-1" : ""} ${index === 6 ? "md:col-span-1 md:row-span-1" : ""} ${index === 7 ? "md:col-span-1 md:row-span-1" : ""}`}
           >
             <Image
               src={image.src}

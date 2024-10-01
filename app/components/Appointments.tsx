@@ -6,18 +6,18 @@ const Appointments = async () => {
 
   return (
     <div className="sec flex w-full flex-col items-center justify-center gap-6">
-      <div className="flex items-center justify-center lg:justify-between">
+      <div className="flex w-full items-center justify-center lg:justify-between">
         <h2 className="text-3xl font-bold lg:text-2xl">Latest Appointment</h2>
 
         <a href="#" className="hidden text-green-600 hover:underline lg:block">
           See More <span className="">&rarr;</span>
         </a>
       </div>
-      <div className="flex flex-col items-center justify-between gap-10 lg:flex-row">
+      <div className="w-f flex flex-col items-center justify-between gap-10 lg:flex-row">
         {displayedAppointments.map((appointment, index) => (
           <div
             key={index}
-            className="hover:bg-green-700BG flex flex-col items-center justify-center gap-4 rounded-lg border bg-white p-6 transition-all"
+            className="hover:bg-green-700BG flex flex-col items-center justify-center gap-4 rounded-xl border bg-white p-6 transition-all"
           >
             <Image
               width={200}

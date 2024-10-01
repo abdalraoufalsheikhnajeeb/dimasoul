@@ -6,7 +6,7 @@ const page = async () => {
   return (
     <div>
       <section className="bg-primaryBG">
-        <div className="sec mx-auto px-4 py-8 text-center md:py-16 md:text-left">
+        <div className="mx-auto max-w-[90vw] px-4 py-8 text-center md:py-16 md:text-left lg:max-w-7xl">
           {/* Services Section */}
           <div className="mt-16 md:flex md:items-center md:space-x-8">
             {/* Vertical Line */}
@@ -30,7 +30,7 @@ const page = async () => {
         {galleryImages.map((image, index) => (
           <div
             key={index}
-            className={`group relative overflow-hidden rounded-lg ${index === 0 ? "md:col-span-1 md:row-span-3" : ""} ${index === 1 ? "md:col-span-2 md:row-span-1" : ""} ${index === 2 ? "md:col-span-1 md:row-span-1" : ""} ${index === 3 ? "md:col-span-2 md:row-span-2" : ""} ${index === 4 ? "md:col-span-1 md:row-span-2" : ""} ${index === 5 ? "md:col-span-2 md:row-span-1" : ""} ${index === 6 ? "md:col-span-1 md:row-span-1" : ""} ${index === 7 ? "md:col-span-1 md:row-span-1" : ""}`}
+            className={`group relative overflow-hidden rounded-xl ${index === 0 ? "md:col-span-1 md:row-span-3" : ""} ${index === 1 ? "md:col-span-2 md:row-span-1" : ""} ${index === 2 ? "md:col-span-1 md:row-span-1" : ""} ${index === 3 ? "md:col-span-2 md:row-span-2" : ""} ${index === 4 ? "md:col-span-1 md:row-span-2" : ""} ${index === 5 ? "md:col-span-2 md:row-span-1" : ""} ${index === 6 ? "md:col-span-1 md:row-span-1" : ""} ${index === 7 ? "md:col-span-1 md:row-span-1" : ""}`}
           >
             <Image
               src={image.src}

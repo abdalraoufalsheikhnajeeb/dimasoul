@@ -31,11 +31,11 @@ const BlogSection = async () => {
       </div>
 
       {/* Blog Grid for Desktop */}
-      <div className="hidden gap-6 md:grid md:grid-cols-2 lg:grid-cols-3 sec">
+      <div className="sec hidden gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
         {blogPosts.slice(0, 6).map((post) => (
           <div
             key={post.id}
-            className="overflow-hidden rounded-lg bg-white shadow-md transition-shadow hover:shadow-xl"
+            className="overflow-hidden rounded-xl bg-white shadow-md transition-shadow hover:shadow-xl"
           >
             <Image
               src={post.image}
@@ -65,7 +65,7 @@ const BlogSection = async () => {
         {blogPosts.slice(0, 3).map((post) => (
           <div
             key={post.id}
-            className="overflow-hidden rounded-lg bg-white shadow-md"
+            className="overflow-hidden rounded-xl bg-white shadow-md"
           >
             <Image
               src={post.image}

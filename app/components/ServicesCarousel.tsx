@@ -31,59 +31,55 @@ const ServicesCarousel = () => {
 
   return (
     <section className="sec">
-      <div className="mx-auto text-center">
-        <h4 className="text-lg font-bold text-primary">Services</h4>
-        <h2 className="mt-2 text-3xl font-bold">
-          Empowering Minds Our Mental Health Consulting Services
-        </h2>
+      <h4 className="text-lg font-bold text-primary">Services</h4>
+      <h2 className="mt-2 text-3xl font-bold">
+        Empowering Minds Our Mental Health Consulting Services
+      </h2>
 
-        <div className="relative mt-8">
-          {/* Carousel Viewport */}
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex">
-              {servicesImages.map((image, index) => (
-                <div
-                  className="sm:1/2 relative w-full flex-shrink-0 p-2 md:w-1/3 lg:w-1/4" // Responsive widths for different screen sizes
-                  key={index}
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={200}
-                    height={400}
-                    className="aspect-[3/4] w-full rounded-xl object-cover transition-transform duration-300 hover:scale-105"
-                  />
-                  {/* Overlay for hover */}
-                  <div className="absolute inset-2 flex flex-col items-center justify-center rounded-xl bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
-                    <h3 className="mb-2 text-2xl font-semibold text-white">
-                      {image.title}
-                    </h3>
-                    <p className="mb-4 text-sm text-white">
-                      {image.description}
-                    </p>
-                    <button className="rounded-md bg-primary px-6 py-2 text-white hover:bg-primaryBG">
-                      See More
-                    </button>
-                  </div>
+      <div className="relative mt-8 px-8">
+        {/* Carousel Viewport */}
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div className="flex">
+            {servicesImages.map((image, index) => (
+              <div
+                className="sm:1/2 relative w-full flex-shrink-0 p-2 md:w-1/3 lg:w-1/4" // Responsive widths for different screen sizes
+                key={index}
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={200}
+                  height={400}
+                  className="aspect-[3/4] w-full rounded-xl object-cover transition-transform duration-300 hover:scale-105"
+                />
+                {/* Overlay for hover */}
+                <div className="absolute inset-2 flex flex-col items-center justify-center rounded-xl bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                  <h3 className="mb-2 text-2xl font-semibold text-white">
+                    {image.title}
+                  </h3>
+                  <p className="mb-4 text-sm text-white">{image.description}</p>
+                  <button className="rounded-md bg-primary px-6 py-2 text-white hover:bg-primaryBG">
+                    See More
+                  </button>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-
-          {/* Navigation buttons */}
-          <button
-            onClick={scrollPrev}
-            className="absolute -left-14 top-1/2 -translate-y-1/2 transform rounded-full p-2 text-3xl font-bold text-primary hover:bg-primaryBG focus:outline-none"
-          >
-            ←
-          </button>
-          <button
-            onClick={scrollNext}
-            className="absolute -right-14 top-1/2 -translate-y-1/2 transform rounded-full p-2 text-3xl font-bold text-primary hover:bg-primaryBG focus:outline-none"
-          >
-            →
-          </button>
         </div>
+
+        {/* Navigation buttons */}
+        <button
+          onClick={scrollPrev}
+          className="absolute -left-4 top-1/2 -translate-y-1/2 transform rounded-full p-2 text-3xl font-bold text-primary hover:bg-primaryBG focus:outline-none"
+        >
+          ←
+        </button>
+        <button
+          onClick={scrollNext}
+          className="absolute -right-4 top-1/2 -translate-y-1/2 transform rounded-full p-2 text-3xl font-bold text-primary hover:bg-primaryBG focus:outline-none"
+        >
+          →
+        </button>
       </div>
     </section>
   );

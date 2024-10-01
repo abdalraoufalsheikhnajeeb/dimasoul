@@ -24,10 +24,10 @@ export const menuItems = [
         title: "Blog",
         href: "/blog",
       },
-      {
-        title: "Resource 2",
-        href: "/resource2",
-      },
+      // {
+      //   title: "Resource 2",
+      //   href: "/resource2",
+      // },
     ],
   },
   {
@@ -118,7 +118,7 @@ export const featuresData = [
     title: "Holistic approach",
     description:
       "Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla diam lorem non mauris.",
-    imageSrc: "/images/test.webp",
+    imageSrc: "/images/Holistic.png",
     altText: "Holistic approach",
   },
   {
@@ -126,7 +126,7 @@ export const featuresData = [
     title: "Expertise Team",
     description:
       "Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla diam lorem non mauris.",
-    imageSrc: "/images/test.webp",
+    imageSrc: "/images/Expertise.png",
     altText: "Expertise Team",
   },
   {
@@ -134,7 +134,7 @@ export const featuresData = [
     title: "Accessibility",
     description:
       "Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla diam lorem non mauris.",
-    imageSrc: "/images/test.webp",
+    imageSrc: "/images/Accessibility.png",
     altText: "Accessibility",
   },
 ];
@@ -627,22 +627,22 @@ export const servicesContent = {
       },
       methodCards: [
         {
-          icon: "/images/test.webp",
+          icon: "/images/ser1.svg",
           title: "Group Therapy",
           description: "Description for Group Therapy.",
         },
         {
-          icon: "/images/test.webp",
+          icon: "/images/ser2.svg",
           title: "Individual Therapy",
           description: "Description for Individual Therapy.",
         },
         {
-          icon: "/images/test.webp",
+          icon: "/images/ser3.svg",
           title: "Family Therapy",
           description: "Description for Family Therapy.",
         },
         {
-          icon: "/images/test.webp",
+          icon: "/images/ser4.svg",
           title: "Couples Therapy",
           description: "Description for Couples Therapy.",
         },
@@ -705,19 +705,19 @@ export const contactInfo = {
   contactDetails: [
     {
       id: 1,
-      icon: "/icons/phone.svg", // Replace with your actual icon path
+      icon: "/images/phone.svg", // Replace with your actual icon path
       label: "Phone Number",
       info: "+987 654 3210",
     },
     {
       id: 2,
-      icon: "/icons/clock.svg", // Replace with your actual icon path
+      icon: "/images/time.svg", // Replace with your actual icon path
       label: "Business Hours",
       info: "Mon-Fri, 07:00-16:00",
     },
     {
       id: 3,
-      icon: "/icons/location.svg", // Replace with your actual icon path
+      icon: "/images/loc.svg", // Replace with your actual icon path
       label: "Address",
       info: "7676 Arden Avenue, Ginashire",
     },
@@ -764,3 +764,41 @@ export const calendarEvents: CalendarEvent[] = [
     end: new Date(2024, 7, 25, 14, 0),
   },
 ];
+
+
+// content.ts
+export interface Testimonial {
+  id: number;
+  name: string;
+  role: string;
+  message: string;
+  image: string;
+}
+
+export const testimonials: Testimonial[] = [
+  {
+    id: 1,
+    name: "George J",
+    role: "Client",
+    message:
+      "Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet at quam adipiscing feugiat interdum mattis.",
+    image: "/images/testimonial1.jpg",
+  },
+  {
+    id: 2,
+    name: "Sarah P",
+    role: "Client",
+    message:
+      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+    image: "/images/testimonial2.jpg",
+  },
+  {
+    id: 3,
+    name: "John D",
+    role: "Client",
+    message:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+    image: "/images/testimonial3.jpg",
+  },
+];
+

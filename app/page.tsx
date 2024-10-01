@@ -11,6 +11,8 @@ import BlogSection from "./components/BlogSection";
 import PricingSection from "./components/PricingSection";
 import FaqSection from "./components/FaqSection";
 import Appointments from "./components/Appointments";
+import TestimonialSection from "./components/TestimonialSection";
+import NewsletterSection from "./components/NewsletterSection";
 
 const Home = async () => {
   return (
@@ -51,6 +53,8 @@ const Home = async () => {
         <Gallery />
         <BlogSection />
         <PricingSection />
+        <TestimonialSection />
+        <NewsletterSection/>
         <FaqSection />
       </main>
     </>
