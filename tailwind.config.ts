@@ -11,6 +11,7 @@ module.exports = {
         primary: "#015612",
         primaryLight: "#E0EAE2",
         primaryBG: "#e1ebe3",
+        secondary: "#E7B447",
         accentBG: "#fcf6e9",
         accent: "#eabb58",
         lite: "#909090",

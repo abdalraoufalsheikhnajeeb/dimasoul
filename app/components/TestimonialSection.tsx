@@ -1,26 +1,23 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import useEmblaCarousel from "embla-carousel-react";
-import { useState, useEffect } from "react";
+import Slider from "react-slick"; // Import React Slick
 import { testimonials } from "../data";
+import TestimonialsCard from "./TestimonialsCard";
 
 export default function TestimonialSection() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-  const [selectedIndex, setSelectedIndex] = useState(0);
-
-  useEffect(() => {
-    if (emblaApi) {
-      emblaApi.on("select", () =>
-        setSelectedIndex(emblaApi.selectedScrollSnap()),
-      );
-    }
-  }, [emblaApi]);
+  // Slider settings
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
-    <section className="flex flex-col items-center justify-between bg-primaryBG p-6 py-16 pe-8 lg:flex-row">
-      {/* Section Header */}
-      <div className="lg:container">
+    <section className="container flex flex-col items-center justify-between p-6 py-16 pe-8 lg:flex-row">
+      <div className="w-full lg:w-1/2">
         <h3 className="mb-2 text-lg font-semibold text-primary">
           Testimonials
         </h3>
@@ -29,43 +26,46 @@ export default function TestimonialSection() {
         </h2>
       </div>
 
-      {/* Embla Carousel */}
-      <div className="relative w-96 overflow-hidden">
-        <div className="embla overflow-hidden" ref={emblaRef}>
-          <div className="embla__container flex">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="embla__slide p-4">
-                <div className="w-80 rounded-xl bg-white p-6 text-center shadow-lg">
-                  <div className="mb-4">
-                    <Image
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      width={100}
-                      height={100}
-                      className="mx-auto rounded-full"
-                    />
-                  </div>
-                  <p className="mb-4 text-gray-600">{testimonial.message}</p>
-                  <h4 className="font-bold">{testimonial.name}</h4>
-                  <p className="text-gray-500">{testimonial.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+      <div className="relative w-full lg:w-1/2">
+        <Slider {...settings}>
+          {testimonials.map((testimonial) => (
+            <TestimonialsCard key={testimonial.id} {...testimonial} />
+          ))}
+        </Slider>
 
-        {/* Navigation Arrows */}
         <button
-          onClick={() => emblaApi?.scrollPrev()}
-          className="hover:bg-primary-dark absolute left-0 top-1/2 -translate-y-1/2 transform rounded-full bg-primary p-3 text-white transition duration-300"
+          className="absolute left-0 top-1/2 -translate-y-1/2 transform rounded-full p-2 text-green-500 transition duration-300 hover:text-green-700"
+          aria-label="Previous"
+          onClick={() => {
+            const prevButton = document.querySelector(
+              ".slick-prev",
+            ) as HTMLElement;
+            prevButton?.click();
+          }}
         >
-          &#8249;
+          <Image
+            src="/images/Arrow - Right.svg"
+            alt="arrow"
+            width={20}
+            height={20}
+          />
         </button>
         <button
-          onClick={() => emblaApi?.scrollNext()}
-          className="hover:bg-primary-dark absolute right-0 top-1/2 -translate-y-1/2 transform rounded-full bg-primary p-3 text-white transition duration-300"
+          className="absolute right-0 top-1/2 -translate-y-1/2 transform rounded-full p-2 text-green-500 transition duration-300 hover:text-green-700"
+          aria-label="Next"
+          onClick={() => {
+            const nextButton = document.querySelector(
+              ".slick-next",
+            ) as HTMLElement;
+            nextButton?.click();
+          }}
         >
-          &#8250;
+          <Image
+            src="/images/Arrow - Left.svg"
+            alt="arrow"
+            width={20}
+            height={20}
+          />
         </button>
       </div>
     </section>

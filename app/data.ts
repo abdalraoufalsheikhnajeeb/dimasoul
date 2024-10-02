@@ -565,7 +565,7 @@ export const successStoryContent = {
       icon: "/images/playIcon.svg",
     },
   ],
-  imageSrc: "/images/test.webp", // Placeholder image, replace with your image path
+  imageSrc: "/images/about_girl.webp", // Placeholder image, replace with your image path
   imageAlt: "Mental Health Consultant",
 };
 

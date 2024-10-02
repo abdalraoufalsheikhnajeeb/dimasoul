@@ -3,7 +3,8 @@ import "./globals.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import localFont from "next/font/local";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 export const metadata: Metadata = {
   title: "DimaSoul",
   description: "Healthy Minds, Happy Lives Mental Health Consultancy",

@@ -13,6 +13,7 @@ import Appointments from "./components/Appointments";
 import TestimonialSection from "./components/TestimonialSection";
 import NewsletterSection from "./components/NewsletterSection";
 import Hero from "./components/Hero";
+import Image from "next/image";
 
 const Home = async () => {
   return (
@@ -29,8 +30,17 @@ const Home = async () => {
         <QuoteSection />
         <Gallery />
         <BlogSection />
-        <PricingSection />
-        <TestimonialSection />
+        <div className="relative w-full">
+          <Image
+            src="/images/left_leaf.svg"
+            alt="leaf"
+            width={0}
+            height={0}
+            className="absolute bottom-0 left-0 z-0 hidden w-2/3 lg:block"
+          />
+          <PricingSection />
+          <TestimonialSection />
+        </div>
         <NewsletterSection />
         <FaqSection />
       </main>
