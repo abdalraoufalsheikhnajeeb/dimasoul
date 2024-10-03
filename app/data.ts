@@ -586,7 +586,7 @@ export const servicesContent = {
       heroImageSrc: "/images/test.webp", // Hero image for the service detail page
       cardsTitle: "Mental Counseling Method",
       video: {
-        src: "https://www.youtube.com/watch?v=79P__YKjd6c",
+        src: "/images/video.mp4",
         title: "Breaking the Stigma Mental Health Counseling",
         description: "Watch our video on mental health counseling.",
       },
@@ -626,7 +626,7 @@ export const servicesContent = {
       heroImageSrc: "/images/test.webp",
       cardsTitle: "therapy-sessions Method",
       video: {
-        src: "https://www.youtube.com/watch?v=79P__YKjd6c",
+        src: "/images/video.mp4",
         title: "Discover Our Therapy Sessions",
         description: "Learn about our therapy sessions through this video.",
       },
