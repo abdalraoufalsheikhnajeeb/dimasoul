@@ -1,3 +1,4 @@
+import Button from "@/app/components/Button";
 import { servicesContent } from "@/app/data";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +7,7 @@ const page = async () => {
   return (
     <div>
       <section className="bg-primaryBG">
-        <div className="mx-auto max-w-[90vw] px-4 py-8 text-center md:py-16 md:text-left lg:max-w-7xl">
+        <div className="container max-w-[90vw] px-4 py-8 text-center md:py-16 md:text-left lg:max-w-7xl">
           {/* Services Section */}
           <div className="mt-16 md:flex md:items-center md:space-x-8">
             {/* Vertical Line */}
@@ -27,14 +28,16 @@ const page = async () => {
       </section>
 
       <section className="container bg-white py-8 md:py-16">
-        <div className="mx-auto px-4 text-center">
+        <div className="flex flex-col gap-8 text-center">
           {/* Section Title */}
-          <h3 className="mb-2 text-lg font-semibold text-primary md:text-xl">
-            {servicesContent.title}
-          </h3>
-          <h2 className="mb-8 text-2xl font-bold md:text-4xl">
-            {servicesContent.subtitle}
-          </h2>
+          <div className="flex flex-col gap-2">
+            <h3 className="text-lg font-semibold text-primary md:text-xl">
+              {servicesContent.title}
+            </h3>
+            <h2 className="w-full px-8 text-center text-2xl font-bold md:text-4xl">
+              {servicesContent.subtitle}
+            </h2>
+          </div>
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -45,24 +48,20 @@ const page = async () => {
                 passHref
               >
                 <div className="group relative cursor-pointer">
-                  {/* Service Image */}
                   <Image
-                    src={service.cardImageSrc} // Use the small image for the card
-                    alt={service.title} // Use the title as the alt text
+                    src={service.cardImageSrc}
+                    alt={service.title}
                     width={200}
                     height={300}
                     className="aspect-[6/8] w-full rounded-2xl object-cover"
                   />
 
-                  {/* Overlay Content (Visible on Hover) */}
                   <div className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl bg-black bg-opacity-50 p-4 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <h3 className="mb-2 text-lg font-bold md:text-xl">
                       {service.title}
                     </h3>
                     <p className="mb-4 text-sm">{service.description}</p>
-                    <button className="hover:bg-primary-dark rounded-2xl bg-primary px-6 py-2 font-bold text-white">
-                      See More
-                    </button>
+                    <Button title="See More" />
                   </div>
                 </div>
               </Link>
