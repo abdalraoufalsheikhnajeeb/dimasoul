@@ -5,7 +5,7 @@ import Button from "./Button";
 const Hero: React.FC = () => {
   return (
     <div className="container flex w-full flex-col justify-between lg:flex-row-reverse lg:justify-start">
-      <div className="relative flex w-1/2 items-start justify-end pr-6 pt-20">
+      <div className="relative w-full flex items-start justify-end pr-6 pt-20 lg:w-1/2">
         {" "}
         <Image
           src="/images/hero_img.webp"
@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
         />
       </div>
 
-      <div className="flex h-fit w-1/2 flex-col items-center justify-start gap-4 pt-20 lg:items-start">
+      <div className="flex h-fit flex-col w-full items-center justify-start gap-4 pt-20 lg:w-1/2 lg:items-start">
         <h1 className="text-center text-[2.5rem] font-bold leading-snug text-black lg:text-start xl:text-[3rem] 2xl:text-[4.5rem]">
           Healthy Minds, Happy Lives{" "}
           <span className="text-accent">Mental Health</span> Consultancy
