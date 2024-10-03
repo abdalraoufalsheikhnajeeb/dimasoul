@@ -79,7 +79,7 @@ const NavBar: React.FC = () => {
           : `left-1/2 top-4 max-w-[90vw] -translate-x-1/2 p-4 shadow-md lg:max-w-7xl ${
               isHomeActive ? "bg-primaryBG" : "bg-white"
             }`
-      } fixed z-50 w-full rounded-full py-4`}
+      } fixed z-40 w-full rounded-full py-4`}
       role="navigation"
     >
       <div className="mx-auto flex items-center justify-between">
@@ -180,14 +180,14 @@ const NavBar: React.FC = () => {
       {/* Mobile Menu Dropdown */}
       {isOpen && (
         <>
-          <div className="fixed left-0 top-0 z-40 h-screen w-screen bg-gray-800 bg-opacity-50 backdrop-blur-sm"></div>
-          <div className="fixed inset-0 z-50 md:hidden">
+          <div className="fixed left-0 top-0 z-30 h-screen w-screen bg-gray-800 bg-opacity-50 backdrop-blur-sm"></div>
+          <div className="fixed inset-0 z-40 md:hidden">
             <ul className="flex h-screen w-full flex-col items-center justify-center gap-8 pb-11 pt-[20vh] text-sm text-gray-700">
               {menuItems.map((item, index) => (
                 <li key={index} className="px-4 py-2">
                   {item.href ? (
                     <Link
-                      className="text-xl text-white"
+                      className="text-2xl text-white"
                       href={item.href}
                       onClick={closeMenuOnClick} // Close menu after click
                     >
@@ -201,7 +201,9 @@ const NavBar: React.FC = () => {
                         aria-expanded={openSubmenus[index] || false}
                         aria-controls={`mobile-submenu-${index}`}
                       >
-                        <span className="text-lg text-white">{item.title}</span>
+                        <span className="text-2xl text-white">
+                          {item.title}
+                        </span>
                         <Image
                           width={20}
                           height={20}
@@ -217,7 +219,7 @@ const NavBar: React.FC = () => {
                           {item.submenu.map((subItem, subIndex) => (
                             <li
                               key={subIndex}
-                              className="py-1 text-start text-lg text-white"
+                              className="py-1 text-start text-xl text-white"
                             >
                               <Link
                                 href={subItem.href}
