@@ -181,7 +181,7 @@ const NavBar: React.FC = () => {
       {isOpen && (
         <>
           <div className="fixed left-0 top-0 z-40 h-screen w-screen bg-gray-800 bg-opacity-50 backdrop-blur-sm"></div>
-          <div className="fixed inset-0 z-50 md:hidden">
+          <div className="fixed inset-0 z-40 md:hidden">
             <ul className="flex h-screen w-full flex-col items-center justify-center gap-8 pb-11 pt-[20vh] text-sm text-gray-700">
               {menuItems.map((item, index) => (
                 <li key={index} className="px-4 py-2">
