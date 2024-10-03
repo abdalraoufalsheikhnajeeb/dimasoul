@@ -74,10 +74,11 @@ const FaqSection = () => {
 
         <div className="w-full lg:w-1/2">
           <Image
+            quality={60}
             src="/images/contact.webp"
             alt="FAQ Image"
-            width={0}
-            height={0}
+            width={101}
+            height={101}
             className="h-full w-full rounded-xl"
           />
         </div>

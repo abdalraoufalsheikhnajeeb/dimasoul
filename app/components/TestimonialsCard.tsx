@@ -21,6 +21,7 @@ const TestimonialsCard: React.FC<TestimonialsCardProps> = ({
       <div className="w-full rounded-xl bg-white p-6 shadow-lg">
         <div className="mb-4">
           <Image
+            quality={60}
             src={image}
             alt={name}
             width={100}

@@ -6,7 +6,7 @@ const Gallery: React.FC = () => {
   return (
     <section className="container flex flex-col gap-6">
       {/* Heading */}
-      <div className="flex w-full items-center justify-center lg:justify-between">
+      <div className="flex w-full items-center justify-center justify-between">
         <h2 className="text-3xl font-bold lg:text-2xl">Gallery</h2>
 
         <Link
@@ -15,10 +15,11 @@ const Gallery: React.FC = () => {
         >
           <span>See More</span>
           <Image
+            quality={60}
             src="/images/Arrow - Left.svg"
             alt="arrow"
-            width={0}
-            height={0}
+            width={101}
+            height={101}
             className="h-10 w-10 2xl:h-12 2xl:w-12"
           />
         </Link>
@@ -29,6 +30,7 @@ const Gallery: React.FC = () => {
         {galleryImages.slice(0, 8).map((image, index) => (
           <div key={index} className="relative overflow-hidden rounded-xl">
             <Image
+              quality={60}
               src={image.src}
               alt={image.alt}
               layout="responsive"

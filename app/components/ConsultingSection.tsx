@@ -6,10 +6,11 @@ const ConsultingSection = async () => {
       <div className="container relative mx-auto flex flex-col items-center justify-center md:flex-row md:space-x-8">
         <div className="relative flex h-full w-full items-center justify-center md:w-1/2">
           <Image
+            quality={60}
             src="/images/home_pride_image.webp"
             alt="Mentor Image"
-            width={0}
-            height={0}
+            width={101}
+            height={101}
             className="relative -top-6 h-2/3 w-full object-cover"
             unoptimized
           />
@@ -27,6 +28,7 @@ const ConsultingSection = async () => {
             {/* Professional Growth */}
             <div className="flex items-start gap-4">
               <Image
+                quality={60}
                 width={100}
                 height={100}
                 src="/images/Growth.svg"
@@ -45,6 +47,7 @@ const ConsultingSection = async () => {
             {/* Reduced Burnout */}
             <div className="flex items-start gap-4">
               <Image
+                quality={60}
                 width={100}
                 height={100}
                 src="/images/Burnout.svg"

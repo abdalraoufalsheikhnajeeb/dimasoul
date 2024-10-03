@@ -7,28 +7,31 @@ const BlogSection = async () => {
   return (
     <section className="container">
       {/* Header */}
-      <div className="mb-8 flex items-center justify-between">
-        <div>
-          <h4 className="text-lg font-bold text-primary">Blog</h4>
-          <h2 className="mt-2 text-3xl font-bold">Our Blog For You</h2>
+
+      <div className="mb-8 flex flex-col">
+        <h4 className="text-xl font-bold text-primary">Blog</h4>
+        <div className="flex w-full justify-between">
+          <div>
+            <h5 className="mt-2 text-3xl font-bold">Our Blog For You</h5>
+          </div>
+          <Link href="/blog" className="flex items-center text-primary">
+            See More
+            <svg
+              className="ml-2 h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 12h14m-7-7l7 7-7 7"
+              ></path>
+            </svg>
+          </Link>
         </div>
-        <a href="#" className="flex items-center text-primary">
-          See More
-          <svg
-            className="ml-2 h-5 w-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M5 12h14m-7-7l7 7-7 7"
-            ></path>
-          </svg>
-        </a>
       </div>
 
       {/* Blog Grid for Desktop */}
@@ -46,6 +49,7 @@ const BlogSection = async () => {
             className="overflow-hidden rounded-xl bg-white shadow-md"
           >
             <Image
+              quality={60}
               src={post.image}
               alt={post.title}
               width={400}

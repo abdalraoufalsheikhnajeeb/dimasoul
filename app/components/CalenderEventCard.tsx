@@ -7,10 +7,11 @@ const CalenderEventCard = () => {
     <article className="flex w-full items-center gap-6">
       <div className="w-full lg:w-2/5">
         <Image
+          quality={60}
           src="/images/latest_girl_img.webp"
           alt="event"
-          width={0}
-          height={0}
+          width={101}
+          height={101}
           className="h-full w-full rounded-xl"
         />
       </div>

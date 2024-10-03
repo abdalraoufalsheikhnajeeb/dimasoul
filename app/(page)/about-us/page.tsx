@@ -38,10 +38,11 @@ const AboutUsSection = async () => {
               </h3>
             </div>
             <Image
+              quality={60}
               src="/images/about_lake_image.webp"
               alt="Image"
-              width={0}
-              height={0}
+              width={101}
+              height={101}
               className="h-64 w-full rounded-xl object-cover"
               unoptimized
             />
@@ -75,10 +76,11 @@ const AboutUsSection = async () => {
         <section className="relative bg-white py-8 md:py-16">
           {/* Leaf Image under the section */}
           <Image
+            quality={60}
             src="/images/bold_leaf.svg"
             alt="leaf"
-            width={0}
-            height={0}
+            width={101}
+            height={101}
             className="absolute -top-10 right-0 z-0 h-96 w-96"
           />
 
@@ -86,10 +88,11 @@ const AboutUsSection = async () => {
             {/* Image Section */}
             <div className="w-full md:mb-0 md:w-2/6">
               <Image
+                quality={60}
                 src="/images/about_brain.webp"
                 alt="Mental Health Journey"
-                width={0}
-                height={0}
+                width={101}
+                height={101}
                 className="h-full w-full rounded-xl object-cover"
               />
             </div>
@@ -138,6 +141,7 @@ const AboutUsSection = async () => {
               {teamContent.images.map((image) => (
                 <div key={image.id} className="w-full">
                   <Image
+          quality={60}
                     src={image.src}
                     alt={image.alt}
                     width={300}
@@ -152,10 +156,11 @@ const AboutUsSection = async () => {
         <div className="relative">
           <TeamSection />
           <Image
+            quality={60}
             src="/images/rotated_leaf.svg"
             alt="leaf"
-            width={0}
-            height={0}
+            width={101}
+            height={101}
             className="absolute -bottom-10 left-1/3 z-0 h-32 w-32"
           />
         </div>
@@ -164,10 +169,11 @@ const AboutUsSection = async () => {
             {/* Image Section */}
             <div className="w-full md:mb-0 md:w-2/5">
               <Image
+                quality={60}
                 src={successStoryContent.imageSrc}
                 alt={successStoryContent.imageAlt}
-                width={0}
-                height={0}
+                width={101}
+                height={101}
                 className="h-[35vw] w-full rounded-xl object-cover"
               />
             </div>
@@ -187,10 +193,11 @@ const AboutUsSection = async () => {
                   <div key={item.id} className="flex items-center">
                     {/* <PlayIcon className="mr-4 h-6 w-6 text-yellow-500" /> */}
                     <Image
+                      quality={60}
                       src={"/images/Arrow - Left 2.svg"}
                       alt={successStoryContent.imageAlt}
-                      width={0}
-                      height={0}
+                      width={101}
+                      height={101}
                       className="w-10 rounded-xl object-cover"
                     />
                     <p className="text-gray-600">{item.text}</p>

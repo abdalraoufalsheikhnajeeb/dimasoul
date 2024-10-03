@@ -86,6 +86,7 @@ const NavBar: React.FC = () => {
         {/* Left: Logo */}
         <div className="flex items-center">
           <Image
+            quality={60}
             src="/images/logo.svg"
             alt="Logo"
             className="h-full"
@@ -123,6 +124,7 @@ const NavBar: React.FC = () => {
                   >
                     {item.title}
                     <Image
+                      quality={60}
                       width={20}
                       height={20}
                       src={"/images/arr-down.svg"}
@@ -158,6 +160,7 @@ const NavBar: React.FC = () => {
           >
             {isOpen ? (
               <Image
+                quality={60}
                 width={80}
                 height={80}
                 src={"/images/x.svg"}
@@ -167,6 +170,7 @@ const NavBar: React.FC = () => {
               />
             ) : (
               <Image
+                quality={60}
                 width={80}
                 height={80}
                 src={"/images/burger.svg"}
@@ -203,6 +207,7 @@ const NavBar: React.FC = () => {
                       >
                         <span className="text-lg text-white">{item.title}</span>
                         <Image
+                          quality={60}
                           width={20}
                           height={20}
                           src={"/images/arr-down-w.svg"}

@@ -46,13 +46,14 @@ export default async function BlogDetail({ params }: BlogDetailParams) {
       <div className="container mx-auto px-4">
         {/* Blog Image */}
         <Image
+          quality={60}
           src={blog.image}
           alt={blog.fullTitle}
           width={800}
           height={400}
           className="mb-8 w-full rounded-xl"
         />
-        <div className="flex gap-8">
+        <div className="flex flex-col gap-8 lg:flex-row">
           <div className="flex flex-col">
             <h1 className="mb-4 text-4xl font-bold">{blog.fullTitle}</h1>
             {/* Blog Content */}
@@ -67,6 +68,7 @@ export default async function BlogDetail({ params }: BlogDetailParams) {
                   className="flex items-center justify-center gap-2"
                 >
                   <Image
+                    quality={60}
                     src={post.image}
                     alt={post.title}
                     width={200}

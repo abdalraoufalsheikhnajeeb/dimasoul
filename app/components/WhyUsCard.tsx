@@ -21,10 +21,12 @@ const WhyUsCard: React.FC<WhyUsCardProps> = ({
     >
       <div className="mb-4">
         <Image
+          quality={60}
+          
           src={imageSrc}
           alt={"Why_IMG"}
-          width={0}
-          height={0}
+          width={100}
+          height={100}
           className="h-20 w-20 rounded-full 2xl:h-28 2xl:w-28"
         />
       </div>

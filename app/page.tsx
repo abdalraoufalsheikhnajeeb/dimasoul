@@ -32,10 +32,11 @@ const Home = async () => {
         <BlogSection />
         <div className="relative w-full">
           <Image
+            quality={60}
             src="/images/left_leaf.svg"
             alt="leaf"
-            width={0}
-            height={0}
+            width={101}
+            height={101}
             className="absolute bottom-0 left-0 z-0 hidden w-2/3 lg:block"
           />
           <PricingSection />

@@ -49,6 +49,7 @@ const page = async () => {
               >
                 <div className="group relative cursor-pointer">
                   <Image
+                    quality={60}
                     src={service.cardImageSrc}
                     alt={service.title}
                     width={200}

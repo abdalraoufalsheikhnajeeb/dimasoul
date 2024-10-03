@@ -46,10 +46,11 @@ const ServicesCarousel = () => {
                 key={index}
               >
                 <Image
+                  quality={60}
                   src={image.src}
                   alt={image.alt}
-                  width={0}
-                  height={0}
+                  width={101}
+                  height={101}
                   className="aspect-[3/4] w-full rounded-xl object-cover transition-transform duration-300 hover:scale-105"
                   unoptimized
                 />
