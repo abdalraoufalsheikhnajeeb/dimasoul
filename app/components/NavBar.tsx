@@ -82,15 +82,15 @@ const NavBar: React.FC = () => {
       } fixed z-50 w-full rounded-full py-4`}
       role="navigation"
     >
-      <div className="mx-auto flex items-center justify-between px-4">
+      <div className="mx-auto flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex items-center">
           <Image
             src="/images/logo.svg"
             alt="Logo"
             className="h-full"
-            width={50}
-            height={50}
+            width={70}
+            height={70}
           />
         </div>
 
@@ -215,10 +215,13 @@ const NavBar: React.FC = () => {
                           className="ml-4 mt-2 space-y-2"
                         >
                           {item.submenu.map((subItem, subIndex) => (
-                            <li key={subIndex} className="py-2 text-white text-lg text-start">
+                            <li
+                              key={subIndex}
+                              className="py-1 text-start text-lg text-white"
+                            >
                               <Link
                                 href={subItem.href}
-                                onClick={closeMenuOnClick} 
+                                onClick={closeMenuOnClick}
                               >
                                 {subItem.title}
                               </Link>

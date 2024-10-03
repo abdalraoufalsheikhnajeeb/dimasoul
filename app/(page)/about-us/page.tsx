@@ -11,10 +11,10 @@ const AboutUsSection = async () => {
   return (
     <>
       <section className="bg-primaryBG">
-        <div className="mx-auto max-w-[90vw] px-4 py-8 text-center md:py-16 md:text-left lg:max-w-7xl">
+        <div className="mx-auto max-w-[90vw] px-4 py-24 text-center md:py-16 md:text-left lg:max-w-7xl">
           <div className="mt-16 md:flex md:items-center md:space-x-8">
             <div className="hidden bg-primary md:block md:h-full md:w-1"></div>
-            <div className="container border-l-4 border-primary pl-6 md:w-1/2">
+            <div className="container border-primary pl-6 md:w-1/2 md:border-l-4">
               <h2 className="mb-4 text-4xl font-bold text-primary">About Us</h2>
               <p className="text-lg leading-relaxed text-gray-600">
                 Lorem ipsum dolor sit amet consectetur. Convallis est urna
@@ -48,7 +48,7 @@ const AboutUsSection = async () => {
           </div>
 
           {/* Text Section */}
-          <div className="w-full md:w-3/5">
+          <div className="mt-4 w-full md:w-3/5">
             <div className="rounded-xl bg-primaryLight px-6 py-4">
               <h4 className="tex-start text-xl font-bold text-primary">
                 Our Mission
@@ -173,7 +173,7 @@ const AboutUsSection = async () => {
             </div>
 
             {/* Text Section */}
-            <div className="w-full md:w-3/5">
+            <div className="mt-4 w-full md:w-3/5">
               <h3 className="mb-2 text-lg font-semibold text-primary md:text-xl">
                 {successStoryContent.title}
               </h3>
