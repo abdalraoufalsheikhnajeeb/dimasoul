@@ -14,7 +14,7 @@ const FaqSection = () => {
   return (
     <section className="container w-full">
       <div className="flex flex-col-reverse items-end justify-center gap-8 md:flex-row">
-        <div className="grow md:w-1/2">
+        <div className="w-full lg:w-1/2">
           <h4 className="text-lg font-bold text-primary">FAQ</h4>
           <h2 className="mt-2 text-3xl font-bold">Your Questions Answered</h2>
 
