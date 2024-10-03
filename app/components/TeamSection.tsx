@@ -6,7 +6,7 @@ import Button from "./Button";
 const TeamSection = async () => {
   return (
     <section className="container">
-      <div className="container mx-auto flex flex-col items-center md:flex-row md:space-x-8">
+      <div className="container mx-auto flex flex-col gap-4 items-center md:flex-row md:space-x-8">
         {/* Text Section */}
         <div className="flex w-full flex-col gap-6 text-center md:mb-0 md:w-1/2 md:text-left">
           <h4 className="text-lg font-bold text-primary">Team</h4>

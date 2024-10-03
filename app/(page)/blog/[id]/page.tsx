@@ -52,7 +52,7 @@ export default async function BlogDetail({ params }: BlogDetailParams) {
           height={400}
           className="mb-8 w-full rounded-xl"
         />
-        <div className="flex gap-8">
+        <div className="flex lg:flex-row flex-col gap-8">
           <div className="flex flex-col">
             <h1 className="mb-4 text-4xl font-bold">{blog.fullTitle}</h1>
             {/* Blog Content */}

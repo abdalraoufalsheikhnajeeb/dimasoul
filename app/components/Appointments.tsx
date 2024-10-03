@@ -15,7 +15,7 @@ const Appointments = async () => {
         height={0}
         className="absolute right-0 top-0 w-2/5"
       />
-      <div className="flex w-full items-center justify-center lg:justify-between">
+      <div className="flex w-full items-center justify-center justify-between">
         <h1 className="text-2xl font-bold xl:text-3xl 2xl:text-5xl">
           Latest Appointment
         </h1>

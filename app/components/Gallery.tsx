@@ -6,7 +6,7 @@ const Gallery: React.FC = () => {
   return (
     <section className="container flex flex-col gap-6">
       {/* Heading */}
-      <div className="flex w-full items-center justify-center lg:justify-between">
+      <div className="flex w-full items-center justify-center justify-between">
         <h2 className="text-3xl font-bold lg:text-2xl">Gallery</h2>
 
         <Link

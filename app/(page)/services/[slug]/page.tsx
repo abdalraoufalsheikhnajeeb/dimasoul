@@ -50,9 +50,11 @@ const ServiceDetail = async ({ params }: ServiceDetailParams) => {
           />
 
           {/* Detailed Description */}
-          <div className="container flex px-4 py-8 md:py-16">
-            <p className="mx-auto w-1/2 max-w-2xl text-3xl">{service.title}</p>
-            <p className="mx-auto w-1/2 max-w-2xl text-lg text-gray-700">
+          <div className="container my-8 flex w-full flex-col gap-4 px-4 lg:flex-row">
+            <p className="mx-auto w-full max-w-2xl text-3xl font-bold lg:w-1/2">
+              {service.title}
+            </p>
+            <p className="mx-auto w-full max-w-2xl text-sm text-gray-700 lg:w-1/2">
               {service.detailedDescription}
             </p>
           </div>
