@@ -27,17 +27,17 @@ const page = () => {
       </section>
 
       <div className="py-16">
-        <div className="container mb-8 flex flex-col w-full lg:flex-row  gap-4 px-4">
-          <p className="mx-auto w-full lg:w-1/2 max-w-2xl text-3xl font-bold">
+        <div className="container mb-8 flex w-full flex-col gap-4 px-4 lg:flex-row">
+          <p className="mx-auto w-full max-w-2xl text-3xl font-bold lg:w-1/2">
             Our Blog For You
           </p>
-          <p className="mx-auto w-full lg:w-1/2 max-w-2xl text-sm text-gray-700">
+          <p className="mx-auto w-full max-w-2xl text-sm text-gray-700 lg:w-1/2">
             Lorem ipsum dolor sit am et consectetur. Convallis est urna
             adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet
             at quam adipiscing.
           </p>
         </div>
-        <div className="container flex flex-col   gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
+        <div className="container flex flex-col gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((post) => (
             <div
               key={post.id}
