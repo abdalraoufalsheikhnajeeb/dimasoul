@@ -76,7 +76,7 @@ const NavBar: React.FC = () => {
       className={`${
         isOpen
           ? "inset-0 bg-transparent"
-          : `container left-1/2 top-4 mx-8 max-w-[80vw] -translate-x-1/2 shadow-md lg:max-w-7xl ${
+          : `left-1/2 top-4 max-w-[90vw] -translate-x-1/2 p-4 shadow-md lg:max-w-7xl ${
               isHomeActive ? "bg-primaryBG" : "bg-white"
             }`
       } fixed z-50 w-full rounded-full py-4`}
@@ -86,7 +86,6 @@ const NavBar: React.FC = () => {
         {/* Left: Logo */}
         <div className="flex items-center">
           <Image
-            quality={60}
             src="/images/logo.svg"
             alt="Logo"
             className="h-full"
@@ -124,7 +123,6 @@ const NavBar: React.FC = () => {
                   >
                     {item.title}
                     <Image
-                      quality={60}
                       width={20}
                       height={20}
                       src={"/images/arr-down.svg"}
@@ -160,7 +158,6 @@ const NavBar: React.FC = () => {
           >
             {isOpen ? (
               <Image
-                quality={60}
                 width={80}
                 height={80}
                 src={"/images/x.svg"}
@@ -170,7 +167,6 @@ const NavBar: React.FC = () => {
               />
             ) : (
               <Image
-                quality={60}
                 width={80}
                 height={80}
                 src={"/images/burger.svg"}
@@ -185,7 +181,7 @@ const NavBar: React.FC = () => {
       {isOpen && (
         <>
           <div className="fixed left-0 top-0 z-40 h-screen w-screen bg-gray-800 bg-opacity-50 backdrop-blur-sm"></div>
-          <div className="fixed inset-0 z-40 md:hidden">
+          <div className="fixed inset-0 z-50 md:hidden">
             <ul className="flex h-screen w-full flex-col items-center justify-center gap-8 pb-11 pt-[20vh] text-sm text-gray-700">
               {menuItems.map((item, index) => (
                 <li key={index} className="px-4 py-2">
@@ -207,7 +203,6 @@ const NavBar: React.FC = () => {
                       >
                         <span className="text-lg text-white">{item.title}</span>
                         <Image
-                          quality={60}
                           width={20}
                           height={20}
                           src={"/images/arr-down-w.svg"}
