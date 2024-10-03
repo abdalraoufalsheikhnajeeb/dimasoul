@@ -23,46 +23,50 @@ const LatestAppointmentCard: React.FC<LatestAppointmentCardProps> = ({
   return (
     <div
       key={id}
-      className="hover:bg-primaryLight flex w-full flex-col items-center justify-center gap-4 rounded-xl border bg-white p-6 transition-all"
+      className="flex w-full flex-col items-center justify-center gap-4 rounded-xl border bg-white p-6 transition-all hover:bg-primaryLight"
     >
       <Image
+        quality={60}
         width={200}
         height={200}
         src={image}
         alt={title}
         className="h-[8rem] w-[8rem] rounded-full object-cover 2xl:h-[12.5rem] 2xl:w-[12.5rem]"
       />
-      <h3 className="text-blackLight text-xl font-bold 2xl:text-3xl">
+      <h3 className="text-xl font-bold text-blackLight 2xl:text-3xl">
         {title}
       </h3>
       <div className="flex justify-center gap-6">
         <div className="flex items-center text-sm text-gray-500">
           <Image
+            quality={60}
             width={20}
             height={20}
             src="/images/Location.svg"
             alt="clock"
             className=""
           />
-          <span className="text-lightGray text-lg 2xl:text-2xl">
+          <span className="text-lg text-lightGray 2xl:text-2xl">
             {location}
           </span>
         </div>
         <div className="flex gap-2 text-sm text-gray-500">
           <Image
+            quality={60}
             width={20}
             height={20}
             src="/images/money_bag.svg"
             alt="clock"
             className=""
           />
-          <span className="text-lightGray text-lg 2xl:text-2xl">{price}</span>
+          <span className="text-lg text-lightGray 2xl:text-2xl">{price}</span>
         </div>
       </div>
       <div className="mt-4 text-center">
         <div className="flex w-full cursor-pointer items-center justify-center space-x-3 rounded-md bg-primary p-4 hover:bg-primary">
           <div className="flex items-center space-x-1 text-white">
             <Image
+              quality={60}
               width={20}
               height={20}
               src="/images/clock.svg"
@@ -73,6 +77,7 @@ const LatestAppointmentCard: React.FC<LatestAppointmentCardProps> = ({
           </div>
           <div className="flex items-center space-x-1 text-white">
             <Image
+              quality={60}
               width={20}
               height={20}
               src="/images/calender.svg"

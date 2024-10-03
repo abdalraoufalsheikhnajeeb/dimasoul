@@ -41,6 +41,7 @@ const page = async () => {
             {contactInfo.contactDetails.map((detail) => (
               <div key={detail.id} className="flex items-start gap-4">
                 <Image
+                  quality={60}
                   src={detail.icon}
                   alt={detail.label}
                   width={40}

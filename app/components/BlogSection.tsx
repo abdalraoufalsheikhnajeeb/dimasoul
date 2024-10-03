@@ -8,8 +8,8 @@ const BlogSection = async () => {
     <section className="container">
       {/* Header */}
 
-      <div className="mb-8 flex flex-col ">
-      <h4 className="text-xl font-bold  text-primary">Blog</h4>
+      <div className="mb-8 flex flex-col">
+        <h4 className="text-xl font-bold text-primary">Blog</h4>
         <div className="flex w-full justify-between">
           <div>
             <h5 className="mt-2 text-3xl font-bold">Our Blog For You</h5>
@@ -49,6 +49,7 @@ const BlogSection = async () => {
             className="overflow-hidden rounded-xl bg-white shadow-md"
           >
             <Image
+              quality={60}
               src={post.image}
               alt={post.title}
               width={400}

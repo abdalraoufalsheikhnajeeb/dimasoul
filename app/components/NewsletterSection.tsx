@@ -23,10 +23,11 @@ export default function NewsletterSection() {
               Join To Our Newsletter
             </h2>
             <Image
+              quality={60}
               src="/images/news_letter_leaf.svg"
               alt="leaf"
-              width={0}
-              height={0}
+              width={101}
+              height={101}
               className="absolute -right-10 -top-5 w-1/6"
             />
           </div>

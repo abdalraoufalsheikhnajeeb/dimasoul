@@ -35,10 +35,11 @@ const page = async () => {
               } ${index === 3 ? "md:col-span-2 md:row-span-1" : ""}`}
             >
               <Image
+                quality={60}
                 src={image.src}
                 alt={image.alt}
-                width={0}
-                height={0}
+                width={101}
+                height={101}
                 unoptimized
                 className="h-full w-full transform object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
               />

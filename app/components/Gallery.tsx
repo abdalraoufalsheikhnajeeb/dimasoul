@@ -15,10 +15,11 @@ const Gallery: React.FC = () => {
         >
           <span>See More</span>
           <Image
+            quality={60}
             src="/images/Arrow - Left.svg"
             alt="arrow"
-            width={0}
-            height={0}
+            width={101}
+            height={101}
             className="h-10 w-10 2xl:h-12 2xl:w-12"
           />
         </Link>
@@ -29,6 +30,7 @@ const Gallery: React.FC = () => {
         {galleryImages.slice(0, 8).map((image, index) => (
           <div key={index} className="relative overflow-hidden rounded-xl">
             <Image
+              quality={60}
               src={image.src}
               alt={image.alt}
               layout="responsive"

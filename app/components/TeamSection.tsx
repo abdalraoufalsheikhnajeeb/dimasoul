@@ -6,7 +6,7 @@ import Button from "./Button";
 const TeamSection = async () => {
   return (
     <section className="container">
-      <div className="container mx-auto flex flex-col gap-4 items-center md:flex-row md:space-x-8">
+      <div className="container mx-auto flex flex-col items-center gap-4 md:flex-row md:space-x-8">
         {/* Text Section */}
         <div className="flex w-full flex-col gap-6 text-center md:mb-0 md:w-1/2 md:text-left">
           <h4 className="text-lg font-bold text-primary">Team</h4>
@@ -30,6 +30,7 @@ const TeamSection = async () => {
           {/* Large Image */}
           <div className="col-span-2 row-span-2 md:col-span-1 md:row-span-2">
             <Image
+              quality={60}
               src={teamImages[0].src}
               alt={teamImages[0].alt}
               width={600}
@@ -41,6 +42,7 @@ const TeamSection = async () => {
           {/* Small Images */}
           <div className="col-span-1">
             <Image
+              quality={60}
               src={teamImages[1].src}
               alt={teamImages[1].alt}
               width={300}
@@ -50,6 +52,7 @@ const TeamSection = async () => {
           </div>
           <div className="col-span-1">
             <Image
+              quality={60}
               src={teamImages[2].src}
               alt={teamImages[2].alt}
               width={300}

@@ -5,19 +5,21 @@ const AboutSection = async () => {
   return (
     <section className="container relative">
       <Image
+        quality={60}
         src="/images/home_about_vector.svg"
         alt="vector"
         className="absolute left-0 z-0 h-full w-fit"
-        width={0}
-        height={0}
+        width={101}
+        height={101}
       />
       <div className="z-10 flex flex-col items-center md:flex-row md:space-x-8">
         <div className="mb-8 w-full md:mb-0 md:w-1/2">
           <Image
+            quality={60}
             src="/images/home_about_img.webp"
             alt="Therapy Session"
-            width={0}
-            height={0}
+            width={101}
+            height={101}
             className="aspect-square h-full w-full rounded-xl object-cover"
             unoptimized
           />

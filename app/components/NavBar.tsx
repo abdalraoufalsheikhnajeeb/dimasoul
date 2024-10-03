@@ -75,8 +75,8 @@ const NavBar: React.FC = () => {
     <nav
       className={`${
         isOpen
-          ? "inset-0  bg-transparent"
-          : `container left-1/2 top-4 max-w-[80vw] mx-8 -translate-x-1/2 shadow-md lg:max-w-7xl ${
+          ? "inset-0 bg-transparent"
+          : `container left-1/2 top-4 mx-8 max-w-[80vw] -translate-x-1/2 shadow-md lg:max-w-7xl ${
               isHomeActive ? "bg-primaryBG" : "bg-white"
             }`
       } fixed z-50 w-full rounded-full py-4`}
@@ -86,6 +86,7 @@ const NavBar: React.FC = () => {
         {/* Left: Logo */}
         <div className="flex items-center">
           <Image
+            quality={60}
             src="/images/logo.svg"
             alt="Logo"
             className="h-full"
@@ -123,6 +124,7 @@ const NavBar: React.FC = () => {
                   >
                     {item.title}
                     <Image
+                      quality={60}
                       width={20}
                       height={20}
                       src={"/images/arr-down.svg"}
@@ -158,6 +160,7 @@ const NavBar: React.FC = () => {
           >
             {isOpen ? (
               <Image
+                quality={60}
                 width={80}
                 height={80}
                 src={"/images/x.svg"}
@@ -167,6 +170,7 @@ const NavBar: React.FC = () => {
               />
             ) : (
               <Image
+                quality={60}
                 width={80}
                 height={80}
                 src={"/images/burger.svg"}
@@ -203,6 +207,7 @@ const NavBar: React.FC = () => {
                       >
                         <span className="text-lg text-white">{item.title}</span>
                         <Image
+                          quality={60}
                           width={20}
                           height={20}
                           src={"/images/arr-down-w.svg"}

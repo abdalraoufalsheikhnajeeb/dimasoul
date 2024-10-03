@@ -7,6 +7,7 @@ const Hero: React.FC = () => {
     <div className="container flex w-full flex-col justify-between pt-14 lg:flex-row-reverse lg:justify-start lg:pt-0">
       <div className="relative flex h-96 w-full items-start justify-end pr-6 pt-20 lg:h-full lg:w-1/2">
         <Image
+          quality={60}
           src="/images/hero_img.webp"
           alt="Mental Health Consultancy"
           layout="fill"

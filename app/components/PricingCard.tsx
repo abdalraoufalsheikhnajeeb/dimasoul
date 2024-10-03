@@ -40,6 +40,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         {features.map((feature: any, index: number) => (
           <li key={index} className="flex items-center gap-2 text-gray-700">
             <Image
+              quality={60}
               src="/images/green_check.svg"
               alt="check"
               width={16}

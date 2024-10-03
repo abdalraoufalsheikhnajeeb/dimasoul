@@ -44,6 +44,7 @@ const page = () => {
               className="overflow-hidden rounded-xl bg-white shadow-md transition-shadow hover:shadow-xl"
             >
               <Image
+                quality={60}
                 src={post.image}
                 alt={post.title}
                 width={300}

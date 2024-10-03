@@ -42,6 +42,7 @@ const ServiceDetail = async ({ params }: ServiceDetailParams) => {
       <div className="py-16">
         <div className="container">
           <Image
+            quality={60}
             src={service.heroImageSrc}
             alt={service.title}
             width={1200}
@@ -68,6 +69,7 @@ const ServiceDetail = async ({ params }: ServiceDetailParams) => {
                 className="flex aspect-video flex-col items-center justify-center gap-4 rounded-2xl bg-white p-6 text-center shadow-lg"
               >
                 <Image
+                  quality={60}
                   src={card.icon}
                   alt={card.title}
                   width={150}

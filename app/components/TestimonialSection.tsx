@@ -44,6 +44,7 @@ export default function TestimonialSection() {
           }}
         >
           <Image
+            quality={60}
             src="/images/Arrow - Right.svg"
             alt="arrow"
             width={20}
@@ -61,6 +62,7 @@ export default function TestimonialSection() {
           }}
         >
           <Image
+            quality={60}
             src="/images/Arrow - Left.svg"
             alt="arrow"
             width={20}

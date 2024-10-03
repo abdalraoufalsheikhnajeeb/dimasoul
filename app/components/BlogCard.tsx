@@ -23,10 +23,11 @@ const BlogCard: React.FC<BlogCardProps> = ({
       className="max-h-[32.5rem] overflow-hidden rounded-xl bg-white shadow-md transition-shadow hover:shadow-xl"
     >
       <Image
+        quality={60}
         src={image}
         alt={title}
-        width={0}
-        height={0}
+        width={101}
+        height={101}
         className="aspect-[3/4] h-3/5 w-full object-cover"
       />
       <div className="p-4">

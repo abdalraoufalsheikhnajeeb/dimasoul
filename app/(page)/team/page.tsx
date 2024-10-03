@@ -42,6 +42,7 @@ const page = () => {
             className={`group relative overflow-hidden rounded-xl shadow-lg`}
           >
             <Image
+              quality={60}
               src={member.image}
               alt={member.title}
               layout="responsive"

@@ -12,6 +12,7 @@ const Footer = async () => {
         <div className="flex h-full flex-col items-start justify-between md:flex-row">
           <div className="flex w-full flex-col justify-center md:w-1/4">
             <Image
+              quality={60}
               width={200}
               height={400}
               src={"/images/logo-name.png"}
@@ -32,7 +33,7 @@ const Footer = async () => {
 
           {/* Services */}
           <div className="flex w-full flex-col justify-center md:w-1/4">
-            <h5 className="text-secondary text-xl font-semibold">
+            <h5 className="text-xl font-semibold text-secondary">
               {footerData.services.title}
             </h5>
             <ul className="mt-4 space-y-2 text-gray-300">
@@ -44,13 +45,19 @@ const Footer = async () => {
 
           {/* Contact */}
           <div className="flex flex-col justify-center md:w-1/4">
-            <h5 className="text-secondary text-xl font-semibold">
+            <h5 className="text-xl font-semibold text-secondary">
               {footerData.contact.title}
             </h5>
             <ul className="mt-4 space-y-2 text-customWhite">
               {footerData.contact.details.map((detail, index) => (
                 <li className="flex items-center gap-3" key={index}>
-                  <Image width={20} height={20} src={detail.icon} alt="x" />
+                  <Image
+                    quality={60}
+                    width={20}
+                    height={20}
+                    src={detail.icon}
+                    alt="x"
+                  />
                   {detail.text}
                 </li>
               ))}
@@ -59,7 +66,7 @@ const Footer = async () => {
 
           {/* Links */}
           <div className="w-full md:w-1/4">
-            <h5 className="text-secondary text-xl font-semibold">
+            <h5 className="text-xl font-semibold text-secondary">
               {footerData.links.title}
             </h5>
             <ul className="mt-4 space-y-2 text-gray-300">
@@ -78,8 +85,9 @@ const Footer = async () => {
             <div className="flex gap-4">
               <Link href="#">
                 <Image
-                  width={0}
-                  height={0}
+                  quality={60}
+                  width={101}
+                  height={101}
                   src={"/images/in.svg"}
                   alt="social_icon"
                   className="h-6 w-6 2xl:h-8 2xl:w-8"
@@ -87,8 +95,9 @@ const Footer = async () => {
               </Link>
               <Link href="#">
                 <Image
-                  width={0}
-                  height={0}
+                  quality={60}
+                  width={101}
+                  height={101}
                   src={"/images/face.svg"}
                   alt="social_icon"
                   className="h-6 w-6 2xl:h-8 2xl:w-8"
@@ -96,8 +105,9 @@ const Footer = async () => {
               </Link>
               <Link href="#">
                 <Image
-                  width={0}
-                  height={0}
+                  quality={60}
+                  width={101}
+                  height={101}
                   src={"/images/insta.svg"}
                   alt="social_icon"
                   className="h-6 w-6 2xl:h-8 2xl:w-8"
@@ -105,8 +115,9 @@ const Footer = async () => {
               </Link>
               <Link href="#">
                 <Image
-                  width={0}
-                  height={0}
+                  quality={60}
+                  width={101}
+                  height={101}
                   src={"/images/whats.svg"}
                   alt="social_icon"
                   className="h-6 w-6 2xl:h-8 2xl:w-8"

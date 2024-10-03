@@ -9,10 +9,11 @@ const Appointments = async () => {
   return (
     <div className="container relative flex w-full flex-col items-center justify-center gap-6 xl:gap-12 2xl:gap-20">
       <Image
+        quality={60}
         src="/images/latest_leaf.svg"
         alt="leaf"
-        width={0}
-        height={0}
+        width={101}
+        height={101}
         className="absolute right-0 top-0 w-2/5"
       />
       <div className="flex w-full items-center justify-center justify-between">
@@ -26,10 +27,11 @@ const Appointments = async () => {
         >
           <span>See More</span>
           <Image
+            quality={60}
             src="/images/Arrow - Left.svg"
             alt="arrow"
-            width={0}
-            height={0}
+            width={101}
+            height={101}
             className="h-10 w-10 2xl:h-12 2xl:w-12"
           />
         </Link>
@@ -39,12 +41,6 @@ const Appointments = async () => {
           <LatestAppointmentCard {...appointment} key={index} />
         ))}
       </div>
-      <a
-        href="#"
-        className="block w-fit rounded-full bg-primary px-6 py-2 text-center text-white hover:bg-green-700 lg:hidden"
-      >
-        See More <span className="ms-2">&rarr;</span>
-      </a>
     </div>
   );
 };

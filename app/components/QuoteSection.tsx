@@ -5,6 +5,7 @@ const QuoteSection = async () => {
     <section className="relative flex h-[300px] w-screen items-center justify-center overflow-hidden text-center md:h-[400px]">
       <div className="absolute inset-0 z-0">
         <Image
+          quality={60}
           src="/images/leafs.jpg"
           alt="Background Image"
           layout="fill"
