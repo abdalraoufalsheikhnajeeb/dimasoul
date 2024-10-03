@@ -145,7 +145,7 @@ export const featuresData = [
 ];
 export const galleryImages = [
   {
-    src: "/images/testGallery/gallery_image_1.webp",
+    src: "/images/Gallery/gallery_image_3.webp",
     alt: "Relaxation",
     caption: "Relaxation",
   },
@@ -586,7 +586,7 @@ export const servicesContent = {
       heroImageSrc: "/images/test.webp", // Hero image for the service detail page
       cardsTitle: "Mental Counseling Method",
       video: {
-        src: "/videos/mental-counseling.mp4",
+        src: "https://www.youtube.com/watch?v=79P__YKjd6c",
         title: "Breaking the Stigma Mental Health Counseling",
         description: "Watch our video on mental health counseling.",
       },
@@ -626,7 +626,7 @@ export const servicesContent = {
       heroImageSrc: "/images/test.webp",
       cardsTitle: "therapy-sessions Method",
       video: {
-        src: "/videos/therapy-sessions.mp4",
+        src: "https://www.youtube.com/watch?v=79P__YKjd6c",
         title: "Discover Our Therapy Sessions",
         description: "Learn about our therapy sessions through this video.",
       },

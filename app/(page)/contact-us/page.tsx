@@ -5,7 +5,7 @@ const page = async () => {
   return (
     <div>
       <section className="bg-primaryBG">
-        <div className="mx-auto max-w-[90vw] px-4 py-8 text-center md:py-16 md:text-left lg:max-w-7xl">
+        <div className="container max-w-[90vw] px-4 py-8 text-center md:py-16 md:text-left lg:max-w-7xl">
           {/* Services Section */}
           <div className="mt-16 md:flex md:items-center md:space-x-8">
             {/* Vertical Line */}
@@ -27,7 +27,7 @@ const page = async () => {
         </div>
       </section>
 
-      <section className="container mx-auto gap-4 px-4 md:flex md:items-start md:justify-between">
+      <section className="container mx-auto gap-4 px-4 py-10 md:flex md:items-start md:justify-between">
         {/* Contact Information */}
         <div className="mb-8 md:mb-0 md:w-1/2">
           <h3 className="mb-4 text-lg font-semibold text-primary">
@@ -112,7 +112,7 @@ const page = async () => {
         </div>
       </section>
 
-      <section className="container px-4">
+      <section className="container py-10">
         {/* Section Header */}
         <h3 className="mb-2 text-lg font-semibold text-primary">
           {mapInfo.subtitle}

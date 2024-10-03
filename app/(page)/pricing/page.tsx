@@ -1,5 +1,4 @@
 import PricingSection from "@/app/components/PricingSection";
-import { pricingPlans } from "@/app/data";
 
 const page = async () => {
   return (

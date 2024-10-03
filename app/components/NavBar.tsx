@@ -1,7 +1,5 @@
 "use client";
 
-/* eslint-disable react/display-name */
-// NavBar.tsx
 import { useState, useEffect, memo } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -52,10 +50,8 @@ const NavBar: React.FC = () => {
   );
   const pathname = usePathname();
 
-  // Determine if the active link is "Home"
   const isHomeActive = pathname === "/";
 
-  // Disable scrolling on body when menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -80,7 +76,7 @@ const NavBar: React.FC = () => {
       className={`${
         isOpen
           ? "inset-0 bg-transparent"
-          : `left-1/2 top-4 max-w-[90vw] -translate-x-1/2 shadow-md lg:max-w-7xl ${
+          : `container left-1/2 top-4 max-w-[90vw] -translate-x-1/2 shadow-md lg:max-w-7xl ${
               isHomeActive ? "bg-primaryBG" : "bg-white"
             }`
       } fixed z-50 w-full rounded-full py-4`}
