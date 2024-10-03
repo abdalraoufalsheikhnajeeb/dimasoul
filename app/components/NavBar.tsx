@@ -26,14 +26,14 @@ export interface MenuItem {
 const SubMenu: React.FC<SubMenuProps> = memo(({ submenuItems, submenuId }) => (
   <ul
     id={submenuId}
-    className="absolute hidden rounded-lg bg-white shadow-md group-hover:block"
+    className="absolute hidden rounded-lg bg-white shadow-lg transition-all duration-300 ease-in-out group-hover:block"
     role="menu"
   >
     {submenuItems.map((subItem, subIndex) => (
       <li key={subIndex}>
         <Link
           href={subItem.href}
-          className="mt-4 w-full whitespace-nowrap px-4 py-2 text-lg text-black hover:bg-gray-100"
+          className="block w-full rounded-md px-4 py-3 text-lg text-gray-700 transition-colors hover:bg-gray-200"
           role="menuitem"
         >
           {subItem.title}
@@ -67,6 +67,10 @@ const NavBar: React.FC = () => {
     }));
   };
 
+  const closeMenuOnClick = () => {
+    setIsOpen(false); // Close the mobile menu when a nav item is clicked
+  };
+
   return (
     <nav
       className={`${
@@ -78,10 +82,16 @@ const NavBar: React.FC = () => {
       } fixed z-50 w-full rounded-full py-4`}
       role="navigation"
     >
-      <div className="mx-auto flex items-center justify-between px-4">
+      <div className="mx-auto flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex items-center">
-          <Image src="/images/logo.svg" alt="Logo" width={50} height={50} />
+          <Image
+            src="/images/logo.svg"
+            alt="Logo"
+            className="h-full"
+            width={70}
+            height={70}
+          />
         </div>
 
         {/* Center: Menu */}
@@ -94,7 +104,7 @@ const NavBar: React.FC = () => {
                 {item.href ? (
                   <Link
                     href={item.href}
-                    className={`flex flex-col items-center hover:text-primary ${
+                    className={`flex flex-col items-center transition-colors hover:text-primary ${
                       isActive
                         ? "text-primary underline underline-offset-8"
                         : ""
@@ -105,7 +115,7 @@ const NavBar: React.FC = () => {
                   </Link>
                 ) : (
                   <button
-                    className="flex items-center gap-2 text-lg hover:text-primary"
+                    className="flex items-center gap-2 text-lg transition-colors hover:text-primary"
                     aria-haspopup="true"
                     aria-expanded="false"
                     aria-controls={submenuId}
@@ -132,7 +142,7 @@ const NavBar: React.FC = () => {
         <div className="hidden md:flex">
           <Link
             href="/contact-us"
-            className="rounded-full bg-green-900 px-4 py-2 text-white hover:bg-green-700"
+            className="rounded-full bg-green-900 px-4 py-2 text-white transition-all hover:bg-green-700"
           >
             Contact Us
           </Link>
@@ -150,14 +160,16 @@ const NavBar: React.FC = () => {
               <Image
                 width={80}
                 height={80}
-                src={"/images/arr-down.svg"}
+                src={"/images/x.svg"}
                 alt="x"
+                className="fixed right-4 top-4 z-50 cursor-pointer"
+                onClick={() => setIsOpen(false)}
               />
             ) : (
               <Image
                 width={80}
                 height={80}
-                src={"/images/arr-down.svg"}
+                src={"/images/burger.svg"}
                 alt="burger"
               />
             )}
@@ -170,11 +182,15 @@ const NavBar: React.FC = () => {
         <>
           <div className="fixed left-0 top-0 z-40 h-screen w-screen bg-gray-800 bg-opacity-50 backdrop-blur-sm"></div>
           <div className="fixed inset-0 z-50 md:hidden">
-            <ul className="flex h-screen w-full flex-col items-center justify-center py-11 text-sm text-gray-700">
+            <ul className="flex h-screen w-full flex-col items-center justify-center gap-8 pb-11 pt-[20vh] text-sm text-gray-700">
               {menuItems.map((item, index) => (
                 <li key={index} className="px-4 py-2">
                   {item.href ? (
-                    <Link className="text-lg text-white" href={item.href}>
+                    <Link
+                      className="text-xl text-white"
+                      href={item.href}
+                      onClick={closeMenuOnClick} // Close menu after click
+                    >
                       {item.title}
                     </Link>
                   ) : (
@@ -189,18 +205,26 @@ const NavBar: React.FC = () => {
                         <Image
                           width={20}
                           height={20}
-                          src={"/images/arr-down.svg"}
+                          src={"/images/arr-down-w.svg"}
                           alt="burger"
                         />
                       </button>
                       {openSubmenus[index] && item.submenu && (
                         <ul
                           id={`mobile-submenu-${index}`}
-                          className="ml-4 mt-2"
+                          className="ml-4 mt-2 space-y-2"
                         >
                           {item.submenu.map((subItem, subIndex) => (
-                            <li key={subIndex} className="py-2">
-                              <Link href={subItem.href}>{subItem.title}</Link>
+                            <li
+                              key={subIndex}
+                              className="py-1 text-start text-lg text-white"
+                            >
+                              <Link
+                                href={subItem.href}
+                                onClick={closeMenuOnClick}
+                              >
+                                {subItem.title}
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -209,8 +233,10 @@ const NavBar: React.FC = () => {
                   )}
                 </li>
               ))}
-              <li className="mt-auto rounded-full bg-green-900 px-8 py-4 text-xl text-white shadow-md hover:bg-green-700">
-                <Link href="/contact-us">Contact Us</Link>
+              <li className="mt-auto rounded-full bg-green-900 px-8 py-4 text-xl text-white shadow-md transition-all hover:bg-green-700">
+                <Link href="/contact-us" onClick={closeMenuOnClick}>
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
