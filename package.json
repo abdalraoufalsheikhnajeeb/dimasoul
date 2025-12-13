@@ -11,7 +11,7 @@
     "@types/react-big-calendar": "^1.8.12",
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.3.0",
-    "next": "^14.2.13",
+    "next": "^14.2.35",
     "next-fonts": "^1.5.1",
     "react": "^18",
     "react-big-calendar": "^1.15.0",
